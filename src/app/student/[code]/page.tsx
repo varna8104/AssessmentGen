@@ -8,7 +8,7 @@ interface Question {
   type: string
   question: string
   options: string[]
-  correctAnswer: string
+  correctAnswer: string | string[];
   explanation: string
   points: number
   timeLimit: number
@@ -49,14 +49,14 @@ export default function StudentAssessmentPage() {
   const [assessment, setAssessment] = useState<Assessment | null>(null)
   const [loading, setLoading] = useState(true)
   const [currentQuestion, setCurrentQuestion] = useState(0)
-  const [answers, setAnswers] = useState<Record<string, string>>({})
+  const [answers, setAnswers] = useState<Record<string, string | string[]>>({})
   const [timeLeft, setTimeLeft] = useState<number>(0)
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [score, setScore] = useState<number | null>(null)
   const [feedback, setFeedback] = useState<Array<{
     question: string
-    userAnswer: string
-    correctAnswer: string
+    userAnswer: string | string[];
+    correctAnswer: string | string[];
     isCorrect: boolean
     explanation: string
     timeSpent: number
@@ -165,7 +165,7 @@ export default function StudentAssessmentPage() {
     }
   }, [currentQuestion, assessment, isSubmitted, questionTimers, timedOutQuestions])
 
-  const handleAnswerSelect = (questionId: string, answer: string) => {
+  const handleAnswerSelect = (questionId: string, answer: string | string[]) => {
     setAnswers(prev => ({ ...prev, [questionId]: answer }))
   }
 
@@ -258,10 +258,14 @@ export default function StudentAssessmentPage() {
         let totalScore = 0
         const feedbackData = assessment.questions.map(question => {
           const userAnswer = answers[question.id] || ''
-          const isCorrect = userAnswer === question.correctAnswer
+          let isCorrect = false;
+          if (Array.isArray(question.correctAnswer) && Array.isArray(userAnswer)) {
+            isCorrect = question.correctAnswer.every((ans, idx) => ans === userAnswer[idx]);
+          } else {
+            isCorrect = userAnswer === question.correctAnswer;
+          }
           const pointsEarned = isCorrect ? question.points : 0
           totalScore += pointsEarned
-          
           return {
             question: question.question,
             userAnswer,
@@ -282,10 +286,14 @@ export default function StudentAssessmentPage() {
       let totalScore = 0
       const feedbackData = assessment.questions.map(question => {
         const userAnswer = answers[question.id] || ''
-        const isCorrect = userAnswer === question.correctAnswer
+        let isCorrect = false;
+        if (Array.isArray(question.correctAnswer) && Array.isArray(userAnswer)) {
+          isCorrect = question.correctAnswer.every((ans, idx) => ans === userAnswer[idx]);
+        } else {
+          isCorrect = userAnswer === question.correctAnswer;
+        }
         const pointsEarned = isCorrect ? question.points : 0
         totalScore += pointsEarned
-        
         return {
           question: question.question,
           userAnswer,
@@ -1212,7 +1220,16 @@ export default function StudentAssessmentPage() {
                   {currentQ.maxWords ? `Maximum ${currentQ.maxWords} words` : 'Maximum 200 words'}
                   {answers[currentQ.id] && (
                     <span className="ml-2">
-                      ({answers[currentQ.id].trim().split(/\s+/).length} words)
+                      {(() => {
+                        const ans = answers[currentQ.id];
+                        if (typeof ans === 'string') {
+                          return `(${ans.trim().split(/\s+/).length} words)`;
+                        } else if (Array.isArray(ans)) {
+                          const joined = ans.join(' ');
+                          return `(${joined.trim().split(/\s+/).length} words)`;
+                        }
+                        return '';
+                      })()}
                     </span>
                   )}
                 </div>
@@ -1231,9 +1248,14 @@ export default function StudentAssessmentPage() {
                         value={(answers[currentQ.id] && Array.isArray(answers[currentQ.id]) ? answers[currentQ.id][blankIndex] : '') || ''}
                         onChange={(e) => {
                           if (isCurrentQuestionTimedOut) return
-                          const currentAnswers = Array.isArray(answers[currentQ.id]) ? [...answers[currentQ.id]] : []
-                          currentAnswers[blankIndex] = e.target.value
-                          handleAnswerSelect(currentQ.id, currentAnswers)
+                          let currentAnswers: string[] = [];
+                          if (Array.isArray(answers[currentQ.id])) {
+                            currentAnswers = [...(answers[currentQ.id] as string[])];
+                          } else if (typeof answers[currentQ.id] === 'string') {
+                            currentAnswers = [];
+                          }
+                          currentAnswers[blankIndex] = e.target.value;
+                          handleAnswerSelect(currentQ.id, currentAnswers);
                         }}
                         disabled={isCurrentQuestionTimedOut}
                         placeholder={`Enter answer for blank ${blankIndex + 1}`}
@@ -1292,13 +1314,19 @@ export default function StudentAssessmentPage() {
                 if (!answer) return 'No answer provided'
                 
                 if (currentQ.type === 'open-text') {
-                  return answer.trim() ? `Answer provided (${answer.trim().split(/\s+/).length} words)` : 'No answer provided'
+                  if (typeof answer === 'string') {
+                    return answer.trim() ? `Answer provided (${answer.trim().split(/\s+/).length} words)` : 'No answer provided';
+                  } else if (Array.isArray(answer)) {
+                    const joined = answer.join(' ');
+                    return joined.trim() ? `Answer provided (${joined.trim().split(/\s+/).length} words)` : 'No answer provided';
+                  }
+                  return 'No answer provided';
                 }
                 
                 if (currentQ.type === 'fill-in-blanks' || currentQ.type === 'fill-blanks') {
-                  const filledBlanks = Array.isArray(answer) ? answer.filter(a => a && a.trim()).length : 0
-                  const totalBlanks = (currentQ.correctAnswer && Array.isArray(currentQ.correctAnswer) ? currentQ.correctAnswer.length : 1)
-                  return `${filledBlanks}/${totalBlanks} blanks filled`
+                  const filledBlanks = Array.isArray(answer) ? answer.filter(a => a && typeof a === 'string' && a.trim()).length : 0;
+                  const totalBlanks = (currentQ.correctAnswer && Array.isArray(currentQ.correctAnswer) ? currentQ.correctAnswer.length : 1);
+                  return `${filledBlanks}/${totalBlanks} blanks filled`;
                 }
                 
                 return 'Answer selected'

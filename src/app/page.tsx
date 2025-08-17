@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import Image from 'next/image';
 
 // Types for structured assessment data
 interface Question {
@@ -1157,11 +1158,15 @@ export default function Page() {
                 Remove
               </button>
             </div>
-            {question.media.type === 'image' && (
-              <img 
-                src={question.media.url} 
-                alt="Question media" 
-                className="max-w-xs rounded-lg border border-gray-300" 
+            {question.media.type === 'image' && question.media.url && (
+              <Image
+                src={question.media.url}
+                alt="Question media"
+                className="max-w-xs rounded-lg border border-gray-300"
+                width={400}
+                height={300}
+                style={{ height: 'auto', width: '100%' }}
+                unoptimized
               />
             )}
             {question.media.type === 'audio' && (

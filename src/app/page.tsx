@@ -1418,7 +1418,7 @@ export default function Page() {
 
                 {showAddQuestion && !addQuestionMode && (
                   <div className="space-y-4">
-                    <p className="text-gray-600 mb-4">Choose how you'd like to add new questions:</p>
+                    <p className="text-gray-600 mb-4">Choose how you&apos;d like to add new questions:</p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <button
                         onClick={() => setAddQuestionMode('manual')}
@@ -1876,7 +1876,7 @@ export default function Page() {
                       </button>
                     </div>
 
-                    <p className="text-gray-600 mb-6">Choose how you'd like to share or export your assessment:</p>
+                    <p className="text-gray-600 mb-6">Choose how you&apos;d like to share or export your assessment:</p>
 
                     {/* Export Options */}
                     <div className="space-y-6">
@@ -3015,7 +3015,7 @@ export default function Page() {
                       <span className="font-medium text-yellow-800">No topics extracted</span>
                     </div>
                     <p className="text-sm text-yellow-700">
-                      The AI couldn't extract specific topics from your document. You can still proceed by entering a custom topic below.
+                      The AI couldn&apos;t extract specific topics from your document. You can still proceed by entering a custom topic below.
                     </p>
                   </div>
                 )}
@@ -3027,7 +3027,7 @@ export default function Page() {
                     ✨ Additional Custom Topic (Optional)
                   </h3>
                   <p className="text-sm text-gray-600 mb-4">
-                    Add any specific topic that wasn't detected in your document but you'd like to include in the assessment.
+                    Add any specific topic that wasn&apos;t detected in your document but you&apos;d like to include in the assessment.
                   </p>
                   <input
                     type="text"
@@ -3039,7 +3039,7 @@ export default function Page() {
                   {customTopic.trim() && (
                     <div className="mt-3 p-3 bg-white rounded-lg border border-purple-200">
                       <span className="text-sm text-purple-800">
-                        ✅ Custom topic "<strong>{customTopic.trim()}</strong>" will be added to your assessment
+                        ✅ Custom topic &quot;<strong>{customTopic.trim()}</strong>&quot; will be added to your assessment
                       </span>
                     </div>
                   )}
@@ -3261,7 +3261,7 @@ export default function Page() {
                       <span className="font-medium text-yellow-800">No topics generated</span>
                     </div>
                     <p className="text-sm text-yellow-700">
-                      The AI couldn't generate specific topics. You can still proceed by entering a custom topic below.
+                      The AI couldn&apos;t generate specific topics. You can still proceed by entering a custom topic below.
                     </p>
                   </div>
                 )}
@@ -3273,7 +3273,7 @@ export default function Page() {
                     ✨ Additional Custom Topic (Optional)
                   </h3>
                   <p className="text-sm text-gray-600 mb-4">
-                    Add any specific topic that wasn't generated but you'd like to include in the assessment.
+                    Add any specific topic that wasn&apos;t generated but you&apos;d like to include in the assessment.
                   </p>
                   <input
                     type="text"
@@ -3285,7 +3285,7 @@ export default function Page() {
                   {aiCustomTopic.trim() && (
                     <div className="mt-3 p-3 bg-white rounded-lg border border-purple-200">
                       <span className="text-sm text-purple-800">
-                        ✅ Custom topic "<strong>{aiCustomTopic.trim()}</strong>" will be added to your assessment
+                        ✅ Custom topic &quot;<strong>{aiCustomTopic.trim()}</strong>&quot; will be added to your assessment
                       </span>
                     </div>
                   )}
@@ -3518,7 +3518,7 @@ export default function Page() {
                 
                 <div className="mt-6 p-4 bg-green-50 rounded-lg border border-green-200">
                   <p className="text-xs text-green-700 text-center">
-                    ✨ Ready to show what you know? Enter the code and let's begin!
+                    ✨ Ready to show what you know? Enter the code and let&apos;s begin!
                   </p>
                 </div>
               </div>

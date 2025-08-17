@@ -1854,7 +1854,7 @@ export default function Page() {
                       </button>
                     </div>
                     <p className="text-xs text-gray-600 mt-3">
-                      Students can join using "Take Assessment" option on the homepage
+                      Students can join using &quot;Take Assessment&quot; option on the homepage
                     </p>
                   </div>
                 </div>

@@ -1,0 +1,379 @@
+[
+  {
+    "assessmentCode": "CROWN23",
+    "studentName": "Alice Champion",
+    "startedAt": "2025-08-08T08:00:15.190Z",
+    "completedAt": "2025-08-08T08:03:15.190Z",
+    "currentQuestion": 4,
+    "totalQuestions": 3,
+    "score": 30,
+    "answers": [
+      {
+        "questionId": "q1",
+        "answer": "4",
+        "isCorrect": true,
+        "timeSpent": 15,
+        "points": 10
+      },
+      {
+        "questionId": "q2",
+        "answer": "Paris",
+        "isCorrect": true,
+        "timeSpent": 20,
+        "points": 10
+      },
+      {
+        "questionId": "q3",
+        "answer": "50",
+        "isCorrect": true,
+        "timeSpent": 25,
+        "points": 10
+      }
+    ],
+    "timeRemaining": 0,
+    "isActive": false
+  },
+  {
+    "assessmentCode": "CROWN23",
+    "studentName": "Bob Runner",
+    "startedAt": "2025-08-08T07:58:15.190Z",
+    "completedAt": "2025-08-08T08:04:15.190Z",
+    "currentQuestion": 4,
+    "totalQuestions": 3,
+    "score": 30,
+    "answers": [
+      {
+        "questionId": "q1",
+        "answer": "4",
+        "isCorrect": true,
+        "timeSpent": 25,
+        "points": 10
+      },
+      {
+        "questionId": "q2",
+        "answer": "Paris",
+        "isCorrect": true,
+        "timeSpent": 35,
+        "points": 10
+      },
+      {
+        "questionId": "q3",
+        "answer": "50",
+        "isCorrect": true,
+        "timeSpent": 40,
+        "points": 10
+      }
+    ],
+    "timeRemaining": 0,
+    "isActive": false
+  },
+  {
+    "assessmentCode": "CROWN23",
+    "studentName": "Charlie Bronze",
+    "startedAt": "2025-08-08T08:01:15.190Z",
+    "completedAt": "2025-08-08T08:03:45.190Z",
+    "currentQuestion": 4,
+    "totalQuestions": 3,
+    "score": 20,
+    "answers": [
+      {
+        "questionId": "q1",
+        "answer": "4",
+        "isCorrect": true,
+        "timeSpent": 18,
+        "points": 10
+      },
+      {
+        "questionId": "q2",
+        "answer": "London",
+        "isCorrect": false,
+        "timeSpent": 22,
+        "points": 0
+      },
+      {
+        "questionId": "q3",
+        "answer": "50",
+        "isCorrect": true,
+        "timeSpent": 28,
+        "points": 10
+      }
+    ],
+    "timeRemaining": 0,
+    "isActive": false
+  },
+  {
+    "assessmentCode": "CROWN23",
+    "studentName": "David Active",
+    "startedAt": "2025-08-08T08:02:15.190Z",
+    "completedAt": "2025-08-08T08:25:19.016Z",
+    "currentQuestion": 2,
+    "totalQuestions": 3,
+    "score": 10,
+    "answers": [
+      {
+        "questionId": "q1",
+        "answer": "4",
+        "isCorrect": true,
+        "timeSpent": 20,
+        "points": 10
+      }
+    ],
+    "timeRemaining": 240,
+    "isActive": false
+  },
+  {
+    "assessmentCode": "30LQ4V",
+    "studentName": "Abhivarna",
+    "startedAt": "2025-08-08T09:47:18.093Z",
+    "completedAt": "2025-08-08T09:54:34.978Z",
+    "currentQuestion": 20,
+    "totalQuestions": 20,
+    "score": 1,
+    "answers": {
+      "french_revolution_mcq_q2_1754646388160.4583": "Religious leaders",
+      "french_revolution_mcq_q4_1754646388161.9158": "They were the driving force behind major events"
+    },
+    "timeRemaining": 0,
+    "isActive": false
+  },
+  {
+    "assessmentCode": "30LQ4V",
+    "studentName": "divya",
+    "startedAt": "2025-08-08T09:48:42.451Z",
+    "completedAt": "2025-08-08T09:54:30.731Z",
+    "currentQuestion": 20,
+    "totalQuestions": 20,
+    "score": 13,
+    "answers": {
+      "french_revolution_mcq_q1_1754646388159.7603": "Economic inequality and social unrest",
+      "french_revolution_mcq_q2_1754646388160.4583": "The common people",
+      "french_revolution_mcq_q3_1754646388160.7444": "Political reform and social change",
+      "french_revolution_mcq_q4_1754646388161.9158": "They were the driving force behind major events",
+      "french_revolution_mcq_q5_1754646388161.0715": "It established new forms of government and political ideologies",
+      "french_revolution_mcq_q6_1754646388162.5195": "It influenced political movements worldwide",
+      "french_revolution_mcq_q7_1754646388162.8176": "Revolutionary leaders and political reformers",
+      "french_revolution_mcq_q8_1754646388162.154": "They were essential in driving change and mobilizing support",
+      "french_revolution_true-false_q1_1754646388163.9382": "True",
+      "french_revolution_true-false_q2_1754646388164.674": "False",
+      "french_revolution_true-false_q3_1754646388164.006": "False",
+      "french_revolution_true-false_q4_1754646388165.9434": "True",
+      "french_revolution_true-false_q5_1754646388165.039": "False"
+    },
+    "timeRemaining": 0,
+    "isActive": false
+  },
+  {
+    "assessmentCode": "30LQ4V",
+    "studentName": "DdIVYA",
+    "startedAt": "2025-08-08T09:56:44.322Z",
+    "completedAt": "2025-08-08T09:57:39.177Z",
+    "currentQuestion": 20,
+    "totalQuestions": 20,
+    "score": 13,
+    "answers": {
+      "french_revolution_mcq_q1_1754646388159.7603": "Economic inequality and social unrest",
+      "french_revolution_mcq_q2_1754646388160.4583": "The common people",
+      "french_revolution_mcq_q3_1754646388160.7444": "Political reform and social change",
+      "french_revolution_mcq_q4_1754646388161.9158": "They were the driving force behind major events",
+      "french_revolution_mcq_q5_1754646388161.0715": "It established new forms of government and political ideologies",
+      "french_revolution_mcq_q6_1754646388162.5195": "It influenced political movements worldwide",
+      "french_revolution_mcq_q7_1754646388162.8176": "Revolutionary leaders and political reformers",
+      "french_revolution_mcq_q8_1754646388162.154": "They were essential in driving change and mobilizing support",
+      "french_revolution_true-false_q1_1754646388163.9382": "True",
+      "french_revolution_true-false_q2_1754646388164.674": "False",
+      "french_revolution_true-false_q3_1754646388164.006": "False",
+      "french_revolution_true-false_q4_1754646388165.9434": "True",
+      "french_revolution_true-false_q5_1754646388165.039": "False"
+    },
+    "timeRemaining": 0,
+    "isActive": false
+  },
+  {
+    "assessmentCode": "TEST01",
+    "studentName": "Abhi",
+    "startedAt": "2025-08-08T10:19:44.792Z",
+    "completedAt": "2025-08-08T10:20:15.708Z",
+    "currentQuestion": 2,
+    "totalQuestions": 2,
+    "score": 10,
+    "answers": {
+      "q1": "8",
+      "q2": "True"
+    },
+    "timeRemaining": 0,
+    "isActive": false
+  },
+  {
+    "assessmentCode": "H8M1OT",
+    "studentName": "Abhi",
+    "startedAt": "2025-08-08T12:07:28.675Z",
+    "completedAt": null,
+    "currentQuestion": 1,
+    "totalQuestions": 20,
+    "score": 0,
+    "answers": [],
+    "timeRemaining": 600,
+    "isActive": true
+  },
+  {
+    "assessmentCode": "NUIJVY",
+    "studentName": "Rahul",
+    "startedAt": "2025-08-08T12:15:08.427Z",
+    "completedAt": "2025-08-08T12:15:39.332Z",
+    "currentQuestion": 8,
+    "totalQuestions": 8,
+    "score": 2,
+    "answers": {
+      "topic_specific_q1_1754655266886": "y = mx + b, where m is slope and b is y-intercept",
+      "topic_specific_q2_1754655266891": "x = -b/2a only",
+      "topic_specific_q3_1754655266893": "The maximum value of a function",
+      "topic_specific_q4_1754655266894": "x = my + b",
+      "topic_specific_q5_1754655266896": "x = (-b ± √(b² - 4ac)) / 2a for ax² + bx + c = 0",
+      "topic_specific_q6_1754655266897": "The area under a curve",
+      "topic_specific_q7_1754655266899": "y² = mx + b",
+      "topic_specific_q8_1754655266900": "x = a + b + c"
+    },
+    "timeRemaining": 0,
+    "isActive": false
+  },
+  {
+    "assessmentCode": "NUIJVY",
+    "studentName": "Vardhan",
+    "startedAt": "2025-08-08T12:16:09.203Z",
+    "completedAt": "2025-08-08T12:16:47.502Z",
+    "currentQuestion": 8,
+    "totalQuestions": 8,
+    "score": 2,
+    "answers": {
+      "topic_specific_q1_1754655266886": "ax + by = c",
+      "topic_specific_q2_1754655266891": "x = √(b² - 4ac)",
+      "topic_specific_q3_1754655266893": "The instantaneous rate of change of a function",
+      "topic_specific_q4_1754655266894": "ax + by = c",
+      "topic_specific_q5_1754655266896": "x = -b/2a only",
+      "topic_specific_q6_1754655266897": "The instantaneous rate of change of a function",
+      "topic_specific_q7_1754655266899": "ax + by = c",
+      "topic_specific_q8_1754655266900": "x = -b/2a only"
+    },
+    "timeRemaining": 0,
+    "isActive": false
+  },
+  {
+    "assessmentCode": "NUIJVY",
+    "studentName": "Abhi",
+    "startedAt": "2025-08-08T12:16:24.433Z",
+    "completedAt": "2025-08-08T12:17:24.352Z",
+    "currentQuestion": 8,
+    "totalQuestions": 8,
+    "score": 5,
+    "answers": {
+      "topic_specific_q1_1754655266886": "y = mx + b, where m is slope and b is y-intercept",
+      "topic_specific_q2_1754655266891": "x = (-b ± √(b² - 4ac)) / 2a for ax² + bx + c = 0",
+      "topic_specific_q3_1754655266893": "The area under a curve",
+      "topic_specific_q5_1754655266896": "x = √(b² - 4ac)",
+      "topic_specific_q6_1754655266897": "The instantaneous rate of change of a function",
+      "topic_specific_q7_1754655266899": "y = mx + b, where m is slope and b is y-intercept",
+      "topic_specific_q8_1754655266900": "x = (-b ± √(b² - 4ac)) / 2a for ax² + bx + c = 0"
+    },
+    "timeRemaining": 0,
+    "isActive": false
+  },
+  {
+    "assessmentCode": "NUIJVY",
+    "studentName": "Yempati",
+    "startedAt": "2025-08-08T12:17:06.282Z",
+    "completedAt": "2025-08-08T12:18:27.981Z",
+    "currentQuestion": 8,
+    "totalQuestions": 8,
+    "score": 0,
+    "answers": {
+      "topic_specific_q1_1754655266886": "y² = mx + b",
+      "topic_specific_q2_1754655266891": "x = -b/2a only",
+      "topic_specific_q3_1754655266893": "The maximum value of a function",
+      "topic_specific_q4_1754655266894": "ax + by = c",
+      "topic_specific_q5_1754655266896": "x = √(b² - 4ac)",
+      "topic_specific_q6_1754655266897": "The area under a curve",
+      "topic_specific_q7_1754655266899": "y² = mx + b",
+      "topic_specific_q8_1754655266900": "x = -b/2a only"
+    },
+    "timeRemaining": 0,
+    "isActive": false
+  },
+  {
+    "assessmentCode": "NUIJVY",
+    "studentName": "CM",
+    "startedAt": "2025-08-08T12:17:46.536Z",
+    "completedAt": "2025-08-08T12:18:10.332Z",
+    "currentQuestion": 8,
+    "totalQuestions": 8,
+    "score": 1,
+    "answers": {
+      "topic_specific_q1_1754655266886": "y = mx + b, where m is slope and b is y-intercept",
+      "topic_specific_q2_1754655266891": "x = -b/2a only",
+      "topic_specific_q3_1754655266893": "The maximum value of a function",
+      "topic_specific_q4_1754655266894": "y² = mx + b",
+      "topic_specific_q5_1754655266896": "x = √(b² - 4ac)",
+      "topic_specific_q6_1754655266897": "The maximum value of a function",
+      "topic_specific_q7_1754655266899": "ax + by = c"
+    },
+    "timeRemaining": 0,
+    "isActive": false
+  },
+  {
+    "assessmentCode": "NUIJVY",
+    "studentName": "user not found",
+    "startedAt": "2025-08-08T12:17:54.035Z",
+    "completedAt": "2025-08-08T12:18:19.939Z",
+    "currentQuestion": 8,
+    "totalQuestions": 8,
+    "score": 4,
+    "answers": {
+      "topic_specific_q1_1754655266886": "ax + by = c",
+      "topic_specific_q2_1754655266891": "x = (-b ± √(b² - 4ac)) / 2a for ax² + bx + c = 0",
+      "topic_specific_q3_1754655266893": "The instantaneous rate of change of a function",
+      "topic_specific_q4_1754655266894": "y² = mx + b",
+      "topic_specific_q5_1754655266896": "x = -b/2a only",
+      "topic_specific_q6_1754655266897": "The instantaneous rate of change of a function",
+      "topic_specific_q7_1754655266899": "ax + by = c",
+      "topic_specific_q8_1754655266900": "x = (-b ± √(b² - 4ac)) / 2a for ax² + bx + c = 0"
+    },
+    "timeRemaining": 0,
+    "isActive": false
+  },
+  {
+    "assessmentCode": "NUIJVY",
+    "studentName": "h",
+    "startedAt": "2025-08-08T12:18:19.416Z",
+    "completedAt": "2025-08-08T12:18:30.680Z",
+    "currentQuestion": 8,
+    "totalQuestions": 8,
+    "score": 0,
+    "answers": {
+      "topic_specific_q6_1754655266897": "The maximum value of a function"
+    },
+    "timeRemaining": 0,
+    "isActive": false
+  },
+  {
+    "assessmentCode": "7HC9D0",
+    "studentName": "Abhi",
+    "startedAt": "2025-08-17T09:44:44.550Z",
+    "completedAt": "2025-08-17T09:47:35.222Z",
+    "currentQuestion": 10,
+    "totalQuestions": 10,
+    "score": 9,
+    "answers": {
+      "ai_q1_1755417520289": "Artificial Intelligence",
+      "ai_q2_1755417520290": "All of the above",
+      "ai_q3_1755417520291": "A subset of AI",
+      "ai_q4_1755417520292": "All of the above",
+      "ai_q5_1755417520293": "A branch of AI that deals with human language",
+      "ai_q6_1755417520294": "The accuracy of predictions",
+      "ai_q7_1755417520295": "Classification",
+      "ai_q8_1755417520296": "A type of machine learning using neural networks",
+      "ai_q9_1755417520297": "A system of algorithms modeled after the human brain",
+      "ai_q10_1755417520299": "All of the above"
+    },
+    "timeRemaining": 0,
+    "isActive": false
+  }
+]

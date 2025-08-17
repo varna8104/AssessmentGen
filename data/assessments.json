@@ -1,0 +1,1488 @@
+[
+  {
+    "code": "CROWN23",
+    "title": "Crown Animation Test Assessment",
+    "description": "Test assessment to verify crown animation for completed students",
+    "questions": [
+      {
+        "id": "q1",
+        "question": "What is 2 + 2?",
+        "type": "mcq",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "correctAnswer": "4",
+        "points": 10,
+        "timeLimit": 30,
+        "difficulty": "Easy"
+      },
+      {
+        "id": "q2",
+        "question": "What is the capital of France?",
+        "type": "mcq",
+        "options": [
+          "London",
+          "Berlin",
+          "Paris",
+          "Madrid"
+        ],
+        "correctAnswer": "Paris",
+        "points": 10,
+        "timeLimit": 30,
+        "difficulty": "Easy"
+      },
+      {
+        "id": "q3",
+        "question": "What is 10 × 5?",
+        "type": "mcq",
+        "options": [
+          "45",
+          "50",
+          "55",
+          "60"
+        ],
+        "correctAnswer": "50",
+        "points": 10,
+        "timeLimit": 30,
+        "difficulty": "Medium"
+      }
+    ],
+    "createdAt": "2025-08-08T08:05:15.187Z",
+    "isActive": false,
+    "metadata": {
+      "assessmentType": "mcq",
+      "language": "english",
+      "difficulty": "Easy",
+      "createdBy": "teacher",
+      "endedAt": "2025-08-08T09:55:15.512Z",
+      "endedBy": "teacher"
+    }
+  },
+  {
+    "code": "30LQ4V",
+    "title": "French Revolution",
+    "description": "Assessment covering key concepts in French Revolution",
+    "questions": [
+      {
+        "id": "french_revolution_mcq_q1_1754646388159.7603",
+        "type": "mcq",
+        "question": "What was the primary cause of French Revolution?",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "easy",
+        "topic": "French Revolution",
+        "uniqueHash": "d2hhdCB3YXMgdGhlIHByaW1hcnkgY2F1",
+        "options": [
+          "Economic inequality and social unrest",
+          "Religious conflicts",
+          "Technological advancement",
+          "Natural disasters"
+        ],
+        "correctAnswer": "Economic inequality and social unrest",
+        "explanation": "French Revolution was primarily driven by economic inequality and social unrest among the population."
+      },
+      {
+        "id": "french_revolution_mcq_q2_1754646388160.4583",
+        "type": "mcq",
+        "question": "Which social group was most affected during French Revolution?",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "easy",
+        "topic": "French Revolution",
+        "uniqueHash": "d2hpY2ggc29jaWFsIGdyb3VwIHdhcyBt",
+        "options": [
+          "The nobility",
+          "The common people",
+          "Religious leaders",
+          "Military officers"
+        ],
+        "correctAnswer": "The common people",
+        "explanation": "The common people bore the greatest impact during French Revolution, facing economic hardship and social upheaval."
+      },
+      {
+        "id": "french_revolution_mcq_q3_1754646388160.7444",
+        "type": "mcq",
+        "question": "What was the most significant outcome of French Revolution?",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "easy",
+        "topic": "French Revolution",
+        "uniqueHash": "d2hhdCB3YXMgdGhlIG1vc3Qgc2lnbmlm",
+        "options": [
+          "Political reform and social change",
+          "Economic collapse",
+          "Military conquest",
+          "Religious transformation"
+        ],
+        "correctAnswer": "Political reform and social change",
+        "explanation": "French Revolution resulted in significant political reform and lasting social change."
+      },
+      {
+        "id": "french_revolution_mcq_q4_1754646388161.9158",
+        "type": "mcq",
+        "question": "What role did economic factors play in French Revolution?",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "medium",
+        "topic": "French Revolution",
+        "uniqueHash": "d2hhdCByb2xlIGRpZCBlY29ub21pYyBm",
+        "options": [
+          "They were the driving force behind major events",
+          "They had minimal impact",
+          "They only affected the wealthy",
+          "They were completely irrelevant"
+        ],
+        "correctAnswer": "They were the driving force behind major events",
+        "explanation": "Economic factors were crucial in French Revolution, often serving as the primary catalyst for major changes."
+      },
+      {
+        "id": "french_revolution_mcq_q5_1754646388161.0715",
+        "type": "mcq",
+        "question": "How did French Revolution change the political landscape?",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "medium",
+        "topic": "French Revolution",
+        "uniqueHash": "aG93IGRpZCBmcmVuY2ggcmV2b2x1dGlv",
+        "options": [
+          "It established new forms of government and political ideologies",
+          "It had no political impact",
+          "It only affected military structure",
+          "It reduced political participation"
+        ],
+        "correctAnswer": "It established new forms of government and political ideologies",
+        "explanation": "French Revolution fundamentally transformed the political landscape, introducing new governmental structures and ideologies."
+      },
+      {
+        "id": "french_revolution_mcq_q6_1754646388162.5195",
+        "type": "mcq",
+        "question": "What was the international impact of French Revolution?",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "medium",
+        "topic": "French Revolution",
+        "uniqueHash": "d2hhdCB3YXMgdGhlIGludGVybmF0aW9u",
+        "options": [
+          "It influenced political movements worldwide",
+          "It remained completely isolated",
+          "It only affected neighboring regions",
+          "It had purely military consequences"
+        ],
+        "correctAnswer": "It influenced political movements worldwide",
+        "explanation": "French Revolution had far-reaching international consequences, inspiring political movements and changes across many nations."
+      },
+      {
+        "id": "french_revolution_mcq_q7_1754646388162.8176",
+        "type": "mcq",
+        "question": "Which key figures emerged as leaders during French Revolution?",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "hard",
+        "topic": "French Revolution",
+        "uniqueHash": "d2hpY2gga2V5IGZpZ3VyZXMgZW1lcmdl",
+        "options": [
+          "Revolutionary leaders and political reformers",
+          "Only military commanders",
+          "Religious authorities",
+          "Foreign diplomats"
+        ],
+        "correctAnswer": "Revolutionary leaders and political reformers",
+        "explanation": "French Revolution saw the rise of revolutionary leaders and political reformers who shaped the course of events."
+      },
+      {
+        "id": "french_revolution_mcq_q8_1754646388162.154",
+        "type": "mcq",
+        "question": "What was the role of popular movements in French Revolution?",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "hard",
+        "topic": "French Revolution",
+        "uniqueHash": "d2hhdCB3YXMgdGhlIHJvbGUgb2YgcG9w",
+        "options": [
+          "They were essential in driving change and mobilizing support",
+          "They were completely absent",
+          "They only opposed change",
+          "They had no significant influence"
+        ],
+        "correctAnswer": "They were essential in driving change and mobilizing support",
+        "explanation": "Popular movements played a crucial role in French Revolution, providing the mass support necessary for major transformations."
+      },
+      {
+        "id": "french_revolution_true-false_q1_1754646388163.9382",
+        "type": "true-false",
+        "question": "French Revolution lasted for more than a decade.",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "easy",
+        "topic": "French Revolution",
+        "uniqueHash": "ZnJlbmNoIHJldm9sdXRpb24gbGFzdGVk",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "explanation": "Most major historical events like French Revolution extended over many years, often lasting more than a decade."
+      },
+      {
+        "id": "french_revolution_true-false_q2_1754646388164.674",
+        "type": "true-false",
+        "question": "French Revolution had no impact on neighboring countries.",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "easy",
+        "topic": "French Revolution",
+        "uniqueHash": "ZnJlbmNoIHJldm9sdXRpb24gaGFkIG5v",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "False",
+        "explanation": "Historical events like French Revolution typically had far-reaching effects beyond their country of origin."
+      },
+      {
+        "id": "french_revolution_true-false_q3_1754646388164.006",
+        "type": "true-false",
+        "question": "Economic factors played a minor role in French Revolution.",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "medium",
+        "topic": "French Revolution",
+        "uniqueHash": "ZWNvbm9taWMgZmFjdG9ycyBwbGF5ZWQg",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "False",
+        "explanation": "Economic issues were typically central to major historical events like French Revolution."
+      },
+      {
+        "id": "french_revolution_true-false_q4_1754646388165.9434",
+        "type": "true-false",
+        "question": "French Revolution resulted in permanent changes to society.",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "medium",
+        "topic": "French Revolution",
+        "uniqueHash": "ZnJlbmNoIHJldm9sdXRpb24gcmVzdWx0",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "True",
+        "explanation": "Major historical events like French Revolution typically created lasting social and political transformations."
+      },
+      {
+        "id": "french_revolution_true-false_q5_1754646388165.039",
+        "type": "true-false",
+        "question": "Only the educated classes participated in French Revolution.",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "hard",
+        "topic": "French Revolution",
+        "uniqueHash": "b25seSB0aGUgZWR1Y2F0ZWQgY2xhc3Nl",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "False",
+        "explanation": "French Revolution involved people from all social classes and educational backgrounds."
+      },
+      {
+        "id": "french_revolution_open-text_q1_1754646388166.3782",
+        "type": "open-text",
+        "question": "Analyze the main causes that led to French Revolution and explain their interconnections.",
+        "points": 1,
+        "timeLimit": 300,
+        "difficulty": "easy",
+        "topic": "French Revolution",
+        "uniqueHash": "YW5hbHl6ZSB0aGUgbWFpbiBjYXVzZXMg",
+        "sampleAnswer": "French Revolution emerged from a complex web of causes including economic hardship, social inequality, political oppression, and intellectual movements. These factors reinforced each other, creating conditions for revolutionary change.",
+        "explanation": "This question tests understanding of multiple causation and the interconnected nature of historical events.",
+        "maxWords": 200
+      },
+      {
+        "id": "french_revolution_open-text_q2_1754646388166.4116",
+        "type": "open-text",
+        "question": "Evaluate the short-term and long-term impacts of French Revolution on society.",
+        "points": 1,
+        "timeLimit": 300,
+        "difficulty": "easy",
+        "topic": "French Revolution",
+        "uniqueHash": "ZXZhbHVhdGUgdGhlIHNob3J0dGVybSBh",
+        "sampleAnswer": "Short-term impacts of French Revolution included immediate political changes and social disruption. Long-term effects encompassed fundamental transformations in government, social structure, and cultural values that persisted for generations.",
+        "explanation": "This question assesses ability to distinguish between immediate and lasting historical consequences.",
+        "maxWords": 200
+      },
+      {
+        "id": "french_revolution_open-text_q3_1754646388167.6497",
+        "type": "open-text",
+        "question": "Compare the different groups involved in French Revolution and their competing interests.",
+        "points": 1,
+        "timeLimit": 300,
+        "difficulty": "medium",
+        "topic": "French Revolution",
+        "uniqueHash": "Y29tcGFyZSB0aGUgZGlmZmVyZW50IGdy",
+        "sampleAnswer": "French Revolution involved various groups with different goals: some sought moderate reform while others demanded radical change. These competing interests created both the energy for change and the conflicts that shaped the outcome.",
+        "explanation": "This question evaluates understanding of historical complexity and competing perspectives.",
+        "maxWords": 200
+      },
+      {
+        "id": "french_revolution_open-text_q4_1754646388167.2063",
+        "type": "open-text",
+        "question": "From a critical perspective: Analyze the main causes that led to French Revolution and explain their interconnections.",
+        "points": 1,
+        "timeLimit": 300,
+        "difficulty": "hard",
+        "topic": "French Revolution",
+        "uniqueHash": "ZnJvbSBhIGNyaXRpY2FsIHBlcnNwZWN0",
+        "sampleAnswer": "French Revolution emerged from a complex web of causes including economic hardship, social inequality, political oppression, and intellectual movements. These factors reinforced each other, creating conditions for revolutionary change.",
+        "explanation": "This question tests understanding of multiple causation and the interconnected nature of historical events.",
+        "maxWords": 200
+      },
+      {
+        "id": "french_revolution_fill-blanks_q1_1754646388168.3708",
+        "type": "fill-blanks",
+        "question": "French Revolution was primarily caused by _______ inequality and _______ unrest among the population.",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "easy",
+        "topic": "French Revolution",
+        "uniqueHash": "ZnJlbmNoIHJldm9sdXRpb24gd2FzIHBy",
+        "correctAnswer": [
+          "economic",
+          "social"
+        ],
+        "blanksCount": 2,
+        "explanation": "Economic inequality and social unrest were the primary driving forces behind French Revolution."
+      },
+      {
+        "id": "french_revolution_fill-blanks_q2_1754646388168.9988",
+        "type": "fill-blanks",
+        "question": "The main outcome of French Revolution was _______ reform and lasting _______ change.",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "medium",
+        "topic": "French Revolution",
+        "uniqueHash": "dGhlIG1haW4gb3V0Y29tZSBvZiBmcmVu",
+        "correctAnswer": [
+          "political",
+          "social"
+        ],
+        "blanksCount": 2,
+        "explanation": "French Revolution resulted in significant political reform and enduring social transformations."
+      },
+      {
+        "id": "french_revolution_fill-blanks_q3_1754646388169.0408",
+        "type": "fill-blanks",
+        "question": "French Revolution influenced _______ movements and had _______ consequences beyond its original location.",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "hard",
+        "topic": "French Revolution",
+        "uniqueHash": "ZnJlbmNoIHJldm9sdXRpb24gaW5mbHVl",
+        "correctAnswer": [
+          "international",
+          "widespread"
+        ],
+        "blanksCount": 2,
+        "explanation": "French Revolution had far-reaching effects, inspiring international movements with widespread consequences."
+      }
+    ],
+    "createdAt": "2025-08-08T09:46:47.617Z",
+    "isActive": false,
+    "metadata": {
+      "assessmentName": "French Revolution",
+      "assessmentType": "mixed",
+      "language": "english",
+      "difficulty": "Medium",
+      "numberOfQuestions": 20,
+      "generatedAt": "2025-08-08T09:46:28.172Z",
+      "source": "fallback",
+      "fallbackReason": "401 {\"error\":{\"message\":\"Invalid API Key\",\"type\":\"invalid_request_error\",\"code\":\"invalid_api_key\"}}",
+      "mode": "AI",
+      "skippedTopicSelection": true,
+      "publishedAt": "2025-08-08T09:46:47.617Z",
+      "status": "active",
+      "totalAttempts": 0,
+      "totalPoints": 20,
+      "totalQuestions": 20,
+      "endedAt": "2025-08-08T09:55:15.512Z",
+      "endedBy": "teacher"
+    }
+  },
+  {
+    "code": "H8M1OT",
+    "title": "Maths basics ",
+    "description": "Comprehensive assessment covering key concepts and principles in Maths basics ",
+    "questions": [
+      {
+        "id": "topic_specific_q1_1754654768996",
+        "type": "multiple-choice",
+        "question": "What is the slope-intercept form of a linear equation?",
+        "options": [
+          "y = mx + b, where m is slope and b is y-intercept",
+          "ax + by = c",
+          "y² = mx + b",
+          "x = my + b"
+        ],
+        "correctAnswer": "y = mx + b, where m is slope and b is y-intercept",
+        "explanation": "Slope-intercept form y = mx + b directly shows the slope (m) and y-intercept (b).",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "easy",
+        "topic": "Maths basics "
+      },
+      {
+        "id": "topic_specific_q2_1754654768997",
+        "type": "multiple-choice",
+        "question": "How do you solve quadratic equations using the quadratic formula?",
+        "options": [
+          "x = (-b ± √(b² - 4ac)) / 2a for ax² + bx + c = 0",
+          "x = -b/2a only",
+          "x = √(b² - 4ac)",
+          "x = a + b + c"
+        ],
+        "correctAnswer": "x = (-b ± √(b² - 4ac)) / 2a for ax² + bx + c = 0",
+        "explanation": "The quadratic formula x = (-b ± √(b² - 4ac)) / 2a solves any quadratic equation ax² + bx + c = 0.",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "easy",
+        "topic": "Maths basics "
+      },
+      {
+        "id": "topic_specific_q3_1754654768999",
+        "type": "multiple-choice",
+        "question": "What does the derivative represent in calculus?",
+        "options": [
+          "The instantaneous rate of change of a function",
+          "The area under a curve",
+          "The maximum value of a function",
+          "The sum of function values"
+        ],
+        "correctAnswer": "The instantaneous rate of change of a function",
+        "explanation": "Derivatives measure how a function changes at any specific point - the instantaneous rate of change.",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "easy",
+        "topic": "Maths basics "
+      },
+      {
+        "id": "topic_specific_q4_1754654769002",
+        "type": "multiple-choice",
+        "question": "Considering practical applications: What is the slope-intercept form of a linear equation?",
+        "options": [
+          "y = mx + b, where m is slope and b is y-intercept",
+          "ax + by = c",
+          "y² = mx + b",
+          "x = my + b"
+        ],
+        "correctAnswer": "y = mx + b, where m is slope and b is y-intercept",
+        "explanation": "Considering practical applications: Slope-intercept form y = mx + b directly shows the slope (m) and y-intercept (b).",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "easy",
+        "topic": "Maths basics "
+      },
+      {
+        "id": "topic_specific_q5_1754654769003",
+        "type": "multiple-choice",
+        "question": "Considering practical applications: How do you solve quadratic equations using the quadratic formula?",
+        "options": [
+          "x = (-b ± √(b² - 4ac)) / 2a for ax² + bx + c = 0",
+          "x = -b/2a only",
+          "x = √(b² - 4ac)",
+          "x = a + b + c"
+        ],
+        "correctAnswer": "x = (-b ± √(b² - 4ac)) / 2a for ax² + bx + c = 0",
+        "explanation": "Considering practical applications: The quadratic formula x = (-b ± √(b² - 4ac)) / 2a solves any quadratic equation ax² + bx + c = 0.",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "easy",
+        "topic": "Maths basics "
+      },
+      {
+        "id": "topic_specific_q6_1754654769004",
+        "type": "multiple-choice",
+        "question": "Considering practical applications: What does the derivative represent in calculus?",
+        "options": [
+          "The instantaneous rate of change of a function",
+          "The area under a curve",
+          "The maximum value of a function",
+          "The sum of function values"
+        ],
+        "correctAnswer": "The instantaneous rate of change of a function",
+        "explanation": "Considering practical applications: Derivatives measure how a function changes at any specific point - the instantaneous rate of change.",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "easy",
+        "topic": "Maths basics "
+      },
+      {
+        "id": "topic_specific_q7_1754654769005",
+        "type": "multiple-choice",
+        "question": "In advanced study: What is the slope-intercept form of a linear equation?",
+        "options": [
+          "y = mx + b, where m is slope and b is y-intercept",
+          "ax + by = c",
+          "y² = mx + b",
+          "x = my + b"
+        ],
+        "correctAnswer": "y = mx + b, where m is slope and b is y-intercept",
+        "explanation": "In advanced study: Slope-intercept form y = mx + b directly shows the slope (m) and y-intercept (b).",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "easy",
+        "topic": "Maths basics "
+      },
+      {
+        "id": "topic_specific_q8_1754654769007",
+        "type": "multiple-choice",
+        "question": "In advanced study: How do you solve quadratic equations using the quadratic formula?",
+        "options": [
+          "x = (-b ± √(b² - 4ac)) / 2a for ax² + bx + c = 0",
+          "x = -b/2a only",
+          "x = √(b² - 4ac)",
+          "x = a + b + c"
+        ],
+        "correctAnswer": "x = (-b ± √(b² - 4ac)) / 2a for ax² + bx + c = 0",
+        "explanation": "In advanced study: The quadratic formula x = (-b ± √(b² - 4ac)) / 2a solves any quadratic equation ax² + bx + c = 0.",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "medium",
+        "topic": "Maths basics "
+      },
+      {
+        "id": "topic_specific_q9_1754654769008",
+        "type": "multiple-choice",
+        "question": "In advanced study: What does the derivative represent in calculus?",
+        "options": [
+          "The instantaneous rate of change of a function",
+          "The area under a curve",
+          "The maximum value of a function",
+          "The sum of function values"
+        ],
+        "correctAnswer": "The instantaneous rate of change of a function",
+        "explanation": "In advanced study: Derivatives measure how a function changes at any specific point - the instantaneous rate of change.",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "medium",
+        "topic": "Maths basics "
+      },
+      {
+        "id": "topic_specific_q10_1754654769009",
+        "type": "multiple-choice",
+        "question": "For comprehensive understanding: What is the slope-intercept form of a linear equation?",
+        "options": [
+          "y = mx + b, where m is slope and b is y-intercept",
+          "ax + by = c",
+          "y² = mx + b",
+          "x = my + b"
+        ],
+        "correctAnswer": "y = mx + b, where m is slope and b is y-intercept",
+        "explanation": "For comprehensive understanding: Slope-intercept form y = mx + b directly shows the slope (m) and y-intercept (b).",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "medium",
+        "topic": "Maths basics "
+      },
+      {
+        "id": "topic_specific_q11_1754654769011",
+        "type": "multiple-choice",
+        "question": "For comprehensive understanding: How do you solve quadratic equations using the quadratic formula?",
+        "options": [
+          "x = (-b ± √(b² - 4ac)) / 2a for ax² + bx + c = 0",
+          "x = -b/2a only",
+          "x = √(b² - 4ac)",
+          "x = a + b + c"
+        ],
+        "correctAnswer": "x = (-b ± √(b² - 4ac)) / 2a for ax² + bx + c = 0",
+        "explanation": "For comprehensive understanding: The quadratic formula x = (-b ± √(b² - 4ac)) / 2a solves any quadratic equation ax² + bx + c = 0.",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "medium",
+        "topic": "Maths basics "
+      },
+      {
+        "id": "topic_specific_q12_1754654769013",
+        "type": "multiple-choice",
+        "question": "For comprehensive understanding: What does the derivative represent in calculus?",
+        "options": [
+          "The instantaneous rate of change of a function",
+          "The area under a curve",
+          "The maximum value of a function",
+          "The sum of function values"
+        ],
+        "correctAnswer": "The instantaneous rate of change of a function",
+        "explanation": "For comprehensive understanding: Derivatives measure how a function changes at any specific point - the instantaneous rate of change.",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "medium",
+        "topic": "Maths basics "
+      },
+      {
+        "id": "topic_specific_q13_1754654769015",
+        "type": "multiple-choice",
+        "question": "In professional practice: What is the slope-intercept form of a linear equation?",
+        "options": [
+          "y = mx + b, where m is slope and b is y-intercept",
+          "ax + by = c",
+          "y² = mx + b",
+          "x = my + b"
+        ],
+        "correctAnswer": "y = mx + b, where m is slope and b is y-intercept",
+        "explanation": "In professional practice: Slope-intercept form y = mx + b directly shows the slope (m) and y-intercept (b).",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "medium",
+        "topic": "Maths basics "
+      },
+      {
+        "id": "topic_specific_q14_1754654769017",
+        "type": "multiple-choice",
+        "question": "In professional practice: How do you solve quadratic equations using the quadratic formula?",
+        "options": [
+          "x = (-b ± √(b² - 4ac)) / 2a for ax² + bx + c = 0",
+          "x = -b/2a only",
+          "x = √(b² - 4ac)",
+          "x = a + b + c"
+        ],
+        "correctAnswer": "x = (-b ± √(b² - 4ac)) / 2a for ax² + bx + c = 0",
+        "explanation": "In professional practice: The quadratic formula x = (-b ± √(b² - 4ac)) / 2a solves any quadratic equation ax² + bx + c = 0.",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "medium",
+        "topic": "Maths basics "
+      },
+      {
+        "id": "topic_specific_q15_1754654769018",
+        "type": "multiple-choice",
+        "question": "In professional practice: What does the derivative represent in calculus?",
+        "options": [
+          "The instantaneous rate of change of a function",
+          "The area under a curve",
+          "The maximum value of a function",
+          "The sum of function values"
+        ],
+        "correctAnswer": "The instantaneous rate of change of a function",
+        "explanation": "In professional practice: Derivatives measure how a function changes at any specific point - the instantaneous rate of change.",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "hard",
+        "topic": "Maths basics "
+      },
+      {
+        "id": "topic_specific_q16_1754654769019",
+        "type": "multiple-choice",
+        "question": "From an analytical perspective: What is the slope-intercept form of a linear equation?",
+        "options": [
+          "y = mx + b, where m is slope and b is y-intercept",
+          "ax + by = c",
+          "y² = mx + b",
+          "x = my + b"
+        ],
+        "correctAnswer": "y = mx + b, where m is slope and b is y-intercept",
+        "explanation": "From an analytical perspective: Slope-intercept form y = mx + b directly shows the slope (m) and y-intercept (b).",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "hard",
+        "topic": "Maths basics "
+      },
+      {
+        "id": "topic_specific_q17_1754654769021",
+        "type": "multiple-choice",
+        "question": "From an analytical perspective: How do you solve quadratic equations using the quadratic formula?",
+        "options": [
+          "x = (-b ± √(b² - 4ac)) / 2a for ax² + bx + c = 0",
+          "x = -b/2a only",
+          "x = √(b² - 4ac)",
+          "x = a + b + c"
+        ],
+        "correctAnswer": "x = (-b ± √(b² - 4ac)) / 2a for ax² + bx + c = 0",
+        "explanation": "From an analytical perspective: The quadratic formula x = (-b ± √(b² - 4ac)) / 2a solves any quadratic equation ax² + bx + c = 0.",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "hard",
+        "topic": "Maths basics "
+      },
+      {
+        "id": "topic_specific_q18_1754654769022",
+        "type": "multiple-choice",
+        "question": "From an analytical perspective: What does the derivative represent in calculus?",
+        "options": [
+          "The instantaneous rate of change of a function",
+          "The area under a curve",
+          "The maximum value of a function",
+          "The sum of function values"
+        ],
+        "correctAnswer": "The instantaneous rate of change of a function",
+        "explanation": "From an analytical perspective: Derivatives measure how a function changes at any specific point - the instantaneous rate of change.",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "hard",
+        "topic": "Maths basics "
+      },
+      {
+        "id": "topic_specific_q19_1754654769023",
+        "type": "multiple-choice",
+        "question": "Considering practical applications: What is the slope-intercept form of a linear equation?",
+        "options": [
+          "y = mx + b, where m is slope and b is y-intercept",
+          "ax + by = c",
+          "y² = mx + b",
+          "x = my + b"
+        ],
+        "correctAnswer": "y = mx + b, where m is slope and b is y-intercept",
+        "explanation": "Considering practical applications: Slope-intercept form y = mx + b directly shows the slope (m) and y-intercept (b).",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "hard",
+        "topic": "Maths basics "
+      },
+      {
+        "id": "topic_specific_q20_1754654769024",
+        "type": "multiple-choice",
+        "question": "Considering practical applications: How do you solve quadratic equations using the quadratic formula?",
+        "options": [
+          "x = (-b ± √(b² - 4ac)) / 2a for ax² + bx + c = 0",
+          "x = -b/2a only",
+          "x = √(b² - 4ac)",
+          "x = a + b + c"
+        ],
+        "correctAnswer": "x = (-b ± √(b² - 4ac)) / 2a for ax² + bx + c = 0",
+        "explanation": "Considering practical applications: The quadratic formula x = (-b ± √(b² - 4ac)) / 2a solves any quadratic equation ax² + bx + c = 0.",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "hard",
+        "topic": "Maths basics "
+      }
+    ],
+    "createdAt": "2025-08-08T12:06:49.562Z",
+    "isActive": true,
+    "metadata": {
+      "source": "fallback",
+      "generatedAt": "2025-08-08T12:06:09.006Z",
+      "numberOfQuestions": 20,
+      "fallbackReason": "AI generation failed - using reliable fallback system",
+      "mode": "AI",
+      "skippedTopicSelection": true,
+      "publishedAt": "2025-08-08T12:06:49.562Z",
+      "status": "active",
+      "totalAttempts": 0,
+      "totalPoints": 20,
+      "totalQuestions": 20
+    }
+  },
+  {
+    "code": "NUIJVY",
+    "title": "Basic maths",
+    "description": "Comprehensive assessment covering key concepts and principles in Basic maths",
+    "questions": [
+      {
+        "id": "topic_specific_q1_1754655266886",
+        "type": "multiple-choice",
+        "question": "What is the slope-intercept form of a linear equation?",
+        "options": [
+          "y = mx + b, where m is slope and b is y-intercept",
+          "ax + by = c",
+          "y² = mx + b",
+          "x = my + b"
+        ],
+        "correctAnswer": "y = mx + b, where m is slope and b is y-intercept",
+        "explanation": "Slope-intercept form y = mx + b directly shows the slope (m) and y-intercept (b).",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "easy",
+        "topic": "Basic maths"
+      },
+      {
+        "id": "topic_specific_q2_1754655266891",
+        "type": "multiple-choice",
+        "question": "How do you solve quadratic equations using the quadratic formula?",
+        "options": [
+          "x = (-b ± √(b² - 4ac)) / 2a for ax² + bx + c = 0",
+          "x = -b/2a only",
+          "x = √(b² - 4ac)",
+          "x = a + b + c"
+        ],
+        "correctAnswer": "x = (-b ± √(b² - 4ac)) / 2a for ax² + bx + c = 0",
+        "explanation": "The quadratic formula x = (-b ± √(b² - 4ac)) / 2a solves any quadratic equation ax² + bx + c = 0.",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "easy",
+        "topic": "Basic maths"
+      },
+      {
+        "id": "topic_specific_q3_1754655266893",
+        "type": "multiple-choice",
+        "question": "What does the derivative represent in calculus?",
+        "options": [
+          "The instantaneous rate of change of a function",
+          "The area under a curve",
+          "The maximum value of a function",
+          "The sum of function values"
+        ],
+        "correctAnswer": "The instantaneous rate of change of a function",
+        "explanation": "Derivatives measure how a function changes at any specific point - the instantaneous rate of change.",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "easy",
+        "topic": "Basic maths"
+      },
+      {
+        "id": "topic_specific_q4_1754655266894",
+        "type": "multiple-choice",
+        "question": "Considering practical applications: What is the slope-intercept form of a linear equation?",
+        "options": [
+          "y = mx + b, where m is slope and b is y-intercept",
+          "ax + by = c",
+          "y² = mx + b",
+          "x = my + b"
+        ],
+        "correctAnswer": "y = mx + b, where m is slope and b is y-intercept",
+        "explanation": "Considering practical applications: Slope-intercept form y = mx + b directly shows the slope (m) and y-intercept (b).",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "medium",
+        "topic": "Basic maths"
+      },
+      {
+        "id": "topic_specific_q5_1754655266896",
+        "type": "multiple-choice",
+        "question": "Considering practical applications: How do you solve quadratic equations using the quadratic formula?",
+        "options": [
+          "x = (-b ± √(b² - 4ac)) / 2a for ax² + bx + c = 0",
+          "x = -b/2a only",
+          "x = √(b² - 4ac)",
+          "x = a + b + c"
+        ],
+        "correctAnswer": "x = (-b ± √(b² - 4ac)) / 2a for ax² + bx + c = 0",
+        "explanation": "Considering practical applications: The quadratic formula x = (-b ± √(b² - 4ac)) / 2a solves any quadratic equation ax² + bx + c = 0.",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "medium",
+        "topic": "Basic maths"
+      },
+      {
+        "id": "topic_specific_q6_1754655266897",
+        "type": "multiple-choice",
+        "question": "Considering practical applications: What does the derivative represent in calculus?",
+        "options": [
+          "The instantaneous rate of change of a function",
+          "The area under a curve",
+          "The maximum value of a function",
+          "The sum of function values"
+        ],
+        "correctAnswer": "The instantaneous rate of change of a function",
+        "explanation": "Considering practical applications: Derivatives measure how a function changes at any specific point - the instantaneous rate of change.",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "medium",
+        "topic": "Basic maths"
+      },
+      {
+        "id": "topic_specific_q7_1754655266899",
+        "type": "multiple-choice",
+        "question": "In advanced study: What is the slope-intercept form of a linear equation?",
+        "options": [
+          "y = mx + b, where m is slope and b is y-intercept",
+          "ax + by = c",
+          "y² = mx + b",
+          "x = my + b"
+        ],
+        "correctAnswer": "y = mx + b, where m is slope and b is y-intercept",
+        "explanation": "In advanced study: Slope-intercept form y = mx + b directly shows the slope (m) and y-intercept (b).",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "hard",
+        "topic": "Basic maths"
+      },
+      {
+        "id": "topic_specific_q8_1754655266900",
+        "type": "multiple-choice",
+        "question": "In advanced study: How do you solve quadratic equations using the quadratic formula?",
+        "options": [
+          "x = (-b ± √(b² - 4ac)) / 2a for ax² + bx + c = 0",
+          "x = -b/2a only",
+          "x = √(b² - 4ac)",
+          "x = a + b + c"
+        ],
+        "correctAnswer": "x = (-b ± √(b² - 4ac)) / 2a for ax² + bx + c = 0",
+        "explanation": "In advanced study: The quadratic formula x = (-b ± √(b² - 4ac)) / 2a solves any quadratic equation ax² + bx + c = 0.",
+        "points": 1,
+        "timeLimit": 30,
+        "difficulty": "hard",
+        "topic": "Basic maths"
+      }
+    ],
+    "createdAt": "2025-08-08T12:14:52.370Z",
+    "isActive": true,
+    "metadata": {
+      "source": "fallback",
+      "generatedAt": "2025-08-08T12:14:26.894Z",
+      "numberOfQuestions": 8,
+      "fallbackReason": "AI generation failed - using reliable fallback system",
+      "mode": "AI",
+      "skippedTopicSelection": true,
+      "publishedAt": "2025-08-08T12:14:52.370Z",
+      "status": "active",
+      "totalAttempts": 0,
+      "totalPoints": 8,
+      "totalQuestions": 8
+    }
+  },
+  {
+    "code": "H3O60Q",
+    "title": "Artificial Intelligence basics",
+    "description": "Assessment description",
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "question": "What does AI stand for?",
+        "options": [
+          "Artificial Intelligence",
+          "Automated Information",
+          "Advanced Integration",
+          "Artificial Integration"
+        ],
+        "correctAnswer": "Artificial Intelligence",
+        "explanation": "AI stands for Artificial Intelligence, which refers to the simulation of human intelligence in machines.",
+        "difficulty": "Easy",
+        "id": "ai_q1_1755415254015",
+        "points": 1,
+        "timeLimit": 30
+      },
+      {
+        "type": "multiple-choice",
+        "question": "Which of the following is a subfield of AI?",
+        "options": [
+          "Machine Learning",
+          "Database Management",
+          "Web Development",
+          "Network Security"
+        ],
+        "correctAnswer": "Machine Learning",
+        "explanation": "Machine Learning is a subfield of AI that focuses on the development of algorithms that allow computers to learn from and make predictions based on data.",
+        "difficulty": "Medium",
+        "id": "ai_q2_1755415254016",
+        "points": 1,
+        "timeLimit": 30
+      },
+      {
+        "type": "multiple-choice",
+        "question": "What is a neural network?",
+        "options": [
+          "A type of database",
+          "A model inspired by the human brain",
+          "A programming language",
+          "A hardware component"
+        ],
+        "correctAnswer": "A model inspired by the human brain",
+        "explanation": "Neural networks are computational models inspired by the human brain's network of neurons, used in machine learning.",
+        "difficulty": "Medium",
+        "id": "ai_q3_1755415254017",
+        "points": 1,
+        "timeLimit": 30
+      },
+      {
+        "type": "multiple-choice",
+        "question": "What is the main goal of AI?",
+        "options": [
+          "To create self-aware machines",
+          "To perform tasks that normally require human intelligence",
+          "To replace human jobs",
+          "To connect devices"
+        ],
+        "correctAnswer": "To perform tasks that normally require human intelligence",
+        "explanation": "The main goal of AI is to enable machines to perform tasks that typically require human intelligence, such as understanding language or recognizing patterns.",
+        "difficulty": "Easy",
+        "id": "ai_q4_1755415254018",
+        "points": 1,
+        "timeLimit": 30
+      },
+      {
+        "type": "multiple-choice",
+        "question": "Which of the following is an example of supervised learning?",
+        "options": [
+          "Clustering",
+          "Classification",
+          "Anomaly Detection",
+          "Reinforcement Learning"
+        ],
+        "correctAnswer": "Classification",
+        "explanation": "Classification is a type of supervised learning where the model is trained on labeled data to predict categorical outcomes.",
+        "difficulty": "Medium",
+        "id": "ai_q5_1755415254019",
+        "points": 1,
+        "timeLimit": 30
+      },
+      {
+        "type": "multiple-choice",
+        "question": "In which year was the term 'Artificial Intelligence' first coined?",
+        "options": [
+          "1943",
+          "1956",
+          "1972",
+          "1985"
+        ],
+        "correctAnswer": "1956",
+        "explanation": "The term 'Artificial Intelligence' was first coined at the Dartmouth Conference in 1956.",
+        "difficulty": "Hard",
+        "id": "ai_q6_1755415254020",
+        "points": 1,
+        "timeLimit": 30
+      },
+      {
+        "type": "multiple-choice",
+        "question": "What is an algorithm?",
+        "options": [
+          "A type of computer hardware",
+          "A step-by-step procedure for calculations",
+          "A programming language",
+          "A user interface design"
+        ],
+        "correctAnswer": "A step-by-step procedure for calculations",
+        "explanation": "An algorithm is a set of rules or steps to follow in calculations or problem-solving processes.",
+        "difficulty": "Easy",
+        "id": "ai_q7_1755415254021",
+        "points": 1,
+        "timeLimit": 30
+      },
+      {
+        "type": "multiple-choice",
+        "question": "Which AI technique is used to improve performance based on past experiences?",
+        "options": [
+          "Reinforcement Learning",
+          "Clustering",
+          "Regression",
+          "Classification"
+        ],
+        "correctAnswer": "Reinforcement Learning",
+        "explanation": "Reinforcement Learning is an AI technique where agents learn to make decisions by taking actions in an environment to maximize cumulative rewards based on past experiences.",
+        "difficulty": "Medium",
+        "id": "ai_q8_1755415254022",
+        "points": 1,
+        "timeLimit": 30
+      },
+      {
+        "type": "multiple-choice",
+        "question": "What is natural language processing (NLP)?",
+        "options": [
+          "A way for computers to understand human language",
+          "A programming language",
+          "A type of database",
+          "An AI hardware component"
+        ],
+        "correctAnswer": "A way for computers to understand human language",
+        "explanation": "Natural Language Processing (NLP) is a subfield of AI that focuses on the interaction between computers and humans through natural language.",
+        "difficulty": "Medium",
+        "id": "ai_q9_1755415254023",
+        "points": 1,
+        "timeLimit": 30
+      },
+      {
+        "type": "multiple-choice",
+        "question": "What is the Turing Test used for?",
+        "options": [
+          "To test the speed of a computer",
+          "To determine if a machine can exhibit intelligent behavior equivalent to a human",
+          "To measure memory capacity",
+          "To evaluate a computer's processing power"
+        ],
+        "correctAnswer": "To determine if a machine can exhibit intelligent behavior equivalent to a human",
+        "explanation": "The Turing Test assesses a machine's ability to exhibit intelligent behavior indistinguishable from that of a human.",
+        "difficulty": "Hard",
+        "id": "ai_q10_1755415254025",
+        "points": 1,
+        "timeLimit": 30
+      },
+      {
+        "type": "multiple-choice",
+        "question": "Which of the following is NOT a common application of AI?",
+        "options": [
+          "Voice Assistants",
+          "Self-Driving Cars",
+          "Social Media Marketing",
+          "Word Processing"
+        ],
+        "correctAnswer": "Word Processing",
+        "explanation": "Word Processing is not primarily an application of AI, while the others utilize AI technologies.",
+        "difficulty": "Easy",
+        "id": "ai_q11_1755415254026",
+        "points": 1,
+        "timeLimit": 30
+      },
+      {
+        "type": "multiple-choice",
+        "question": "What is deep learning?",
+        "options": [
+          "A method of data analysis",
+          "A technique that uses neural networks with many layers",
+          "A type of unsupervised learning",
+          "A simple algorithm"
+        ],
+        "correctAnswer": "A technique that uses neural networks with many layers",
+        "explanation": "Deep learning is a subset of machine learning that uses neural networks with multiple layers to analyze various factors of data.",
+        "difficulty": "Medium",
+        "id": "ai_q12_1755415254027",
+        "points": 1,
+        "timeLimit": 30
+      },
+      {
+        "type": "multiple-choice",
+        "question": "What is the purpose of data training in AI?",
+        "options": [
+          "To create hardware",
+          "To improve algorithm efficiency",
+          "To prepare the model for making predictions",
+          "To store data"
+        ],
+        "correctAnswer": "To prepare the model for making predictions",
+        "explanation": "Data training involves feeding data to an AI model so it can learn and improve its predictions or classifications.",
+        "difficulty": "Medium",
+        "id": "ai_q13_1755415254028",
+        "points": 1,
+        "timeLimit": 30
+      },
+      {
+        "type": "multiple-choice",
+        "question": "Which programming language is commonly used for AI development?",
+        "options": [
+          "Java",
+          "C++",
+          "Python",
+          "HTML"
+        ],
+        "correctAnswer": "Python",
+        "explanation": "Python is widely used in AI development due to its simplicity and the availability of numerous libraries.",
+        "difficulty": "Easy",
+        "id": "ai_q14_1755415254029",
+        "points": 1,
+        "timeLimit": 30
+      },
+      {
+        "type": "multiple-choice",
+        "question": "What is the 'AI Winter'?",
+        "options": [
+          "A period of reduced funding and interest in AI research",
+          "A time when AI technology advanced rapidly",
+          "The initial creation of AI",
+          "A type of algorithm"
+        ],
+        "correctAnswer": "A period of reduced funding and interest in AI research",
+        "explanation": "The 'AI Winter' refers to periods when interest and funding for AI research declined significantly.",
+        "difficulty": "Hard",
+        "id": "ai_q15_1755415254030",
+        "points": 1,
+        "timeLimit": 30
+      },
+      {
+        "type": "multiple-choice",
+        "question": "What is the difference between narrow AI and general AI?",
+        "options": [
+          "Narrow AI is specialized; General AI is versatile",
+          "Narrow AI is outdated; General AI is modern",
+          "Narrow AI cannot operate; General AI can",
+          "There is no difference"
+        ],
+        "correctAnswer": "Narrow AI is specialized; General AI is versatile",
+        "explanation": "Narrow AI operates within a limited context while General AI would have the ability to understand, learn, and apply knowledge across a wide range of tasks.",
+        "difficulty": "Medium",
+        "id": "ai_q16_1755415254031",
+        "points": 1,
+        "timeLimit": 30
+      },
+      {
+        "type": "multiple-choice",
+        "question": "What does 'big data' refer to?",
+        "options": [
+          "Small datasets",
+          "Large and complex datasets",
+          "Data that is easy to process",
+          "Data used in word processing"
+        ],
+        "correctAnswer": "Large and complex datasets",
+        "explanation": "Big data refers to datasets that are so large and complex that traditional data processing software cannot manage them efficiently.",
+        "difficulty": "Medium",
+        "id": "ai_q17_1755415254032",
+        "points": 1,
+        "timeLimit": 30
+      },
+      {
+        "type": "multiple-choice",
+        "question": "Which of the following terms refers to the ability of a machine to learn and improve from experience?",
+        "options": [
+          "Automation",
+          "Self-learning",
+          "Adaptability",
+          "Machine Learning"
+        ],
+        "correctAnswer": "Machine Learning",
+        "explanation": "Machine Learning is the field of AI that focuses on the development of algorithms that allow machines to learn from and improve based on experience.",
+        "difficulty": "Easy",
+        "id": "ai_q18_1755415254033",
+        "points": 1,
+        "timeLimit": 30
+      },
+      {
+        "type": "multiple-choice",
+        "question": "What is the primary goal of artificial intelligence?",
+        "options": [
+          "To create machines that can think and learn like humans",
+          "To replace human jobs entirely",
+          "To perform tasks without any human intervention",
+          "To enhance human intelligence"
+        ],
+        "correctAnswer": "To create machines that can think and learn like humans",
+        "explanation": "The primary goal of AI is to develop systems that can mimic human cognitive functions such as learning and problem-solving.",
+        "difficulty": "Easy",
+        "id": "q_1755415271832_sjdsnt55a",
+        "points": 1,
+        "timeLimit": 30
+      },
+      {
+        "type": "multiple-choice",
+        "question": "Which of the following is a common technique used in machine learning?",
+        "options": [
+          "Reinforcement learning",
+          "Data mining",
+          "Database management",
+          "Web development"
+        ],
+        "correctAnswer": "Reinforcement learning",
+        "explanation": "Reinforcement learning is a type of machine learning where an agent learns to make decisions by receiving rewards or penalties based on its actions.",
+        "difficulty": "Medium",
+        "id": "q_1755415271832_tm94mcxrn",
+        "points": 1,
+        "timeLimit": 30
+      }
+    ],
+    "createdAt": "2025-08-17T07:39:43.950Z",
+    "isActive": true,
+    "metadata": {
+      "source": "ai",
+      "generatedAt": "2025-08-17T07:20:54.016Z",
+      "numberOfQuestions": 18,
+      "assessmentName": "Artificial Intelligence basics",
+      "assessmentType": "mcq",
+      "language": "english",
+      "difficulty": "Medium",
+      "easyToHard": false,
+      "requestedNumberOfQuestions": "20",
+      "isAIMode": true,
+      "isManualMode": false,
+      "skipTopicSelection": false,
+      "isAdditionalQuestions": false,
+      "selectedTopics": [
+        "Introduction to AI",
+        "AI Ethics",
+        "History of Artificial Intelligence",
+        "AI in Healthcare",
+        "Future Trends in AI",
+        "AI in Medicine"
+      ],
+      "mode": "AI",
+      "publishedAt": "2025-08-17T07:39:43.950Z",
+      "status": "active",
+      "totalAttempts": 0,
+      "totalPoints": 20,
+      "totalQuestions": 20
+    }
+  },
+  {
+    "code": "7HC9D0",
+    "title": "AI",
+    "description": "Assessment description",
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "question": "What does AI stand for?",
+        "options": [
+          "Artificial Intelligence",
+          "Automated Integration",
+          "Artificial Interaction",
+          "Automatic Intelligence"
+        ],
+        "correctAnswer": "Artificial Intelligence",
+        "explanation": "AI stands for Artificial Intelligence, which refers to the simulation of human intelligence processes by machines.",
+        "difficulty": "Easy",
+        "id": "ai_q1_1755417520289",
+        "points": 1,
+        "timeLimit": 30
+      },
+      {
+        "type": "multiple-choice",
+        "question": "Which of the following is a common application of AI?",
+        "options": [
+          "Social Media",
+          "Video Games",
+          "Self-driving Cars",
+          "All of the above"
+        ],
+        "correctAnswer": "All of the above",
+        "explanation": "AI is used in various applications including social media algorithms, video game development, and self-driving car technology.",
+        "difficulty": "Medium",
+        "id": "ai_q2_1755417520290",
+        "points": 1,
+        "timeLimit": 30
+      },
+      {
+        "type": "multiple-choice",
+        "question": "What is machine learning?",
+        "options": [
+          "A subset of AI",
+          "A programming language",
+          "A type of hardware",
+          "A data storage technique"
+        ],
+        "correctAnswer": "A subset of AI",
+        "explanation": "Machine learning is a subset of AI focused on the development of algorithms that allow computers to learn from and make predictions based on data.",
+        "difficulty": "Medium",
+        "id": "ai_q3_1755417520291",
+        "points": 1,
+        "timeLimit": 30
+      },
+      {
+        "type": "multiple-choice",
+        "question": "Which of the following is a challenge in AI?",
+        "options": [
+          "Bias in algorithms",
+          "Lack of data",
+          "High cost of implementation",
+          "All of the above"
+        ],
+        "correctAnswer": "All of the above",
+        "explanation": "AI faces several challenges, including bias in algorithms, data availability, and the costs associated with implementation.",
+        "difficulty": "Hard",
+        "id": "ai_q4_1755417520292",
+        "points": 1,
+        "timeLimit": 30
+      },
+      {
+        "type": "multiple-choice",
+        "question": "What is natural language processing (NLP)?",
+        "options": [
+          "A branch of AI that deals with human language",
+          "A type of data analysis",
+          "A programming language",
+          "A hardware component"
+        ],
+        "correctAnswer": "A branch of AI that deals with human language",
+        "explanation": "Natural language processing (NLP) is a branch of AI that focuses on the interaction between computers and humans through natural language.",
+        "difficulty": "Medium",
+        "id": "ai_q5_1755417520293",
+        "points": 1,
+        "timeLimit": 30
+      },
+      {
+        "type": "multiple-choice",
+        "question": "What is the Turing Test designed to evaluate?",
+        "options": [
+          "The intelligence of a computer",
+          "The speed of processing",
+          "The accuracy of predictions",
+          "The power of hardware"
+        ],
+        "correctAnswer": "The intelligence of a computer",
+        "explanation": "The Turing Test is designed to evaluate a machine's ability to exhibit intelligent behavior equivalent to, or indistinguishable from, that of a human.",
+        "difficulty": "Hard",
+        "id": "ai_q6_1755417520294",
+        "points": 1,
+        "timeLimit": 30
+      },
+      {
+        "type": "multiple-choice",
+        "question": "Which of these is an example of supervised learning?",
+        "options": [
+          "Classification",
+          "Clustering",
+          "Dimensionality Reduction",
+          "Reinforcement Learning"
+        ],
+        "correctAnswer": "Classification",
+        "explanation": "Classification is a type of supervised learning where the model is trained on labeled data to predict categorical outcomes.",
+        "difficulty": "Medium",
+        "id": "ai_q7_1755417520295",
+        "points": 1,
+        "timeLimit": 30
+      },
+      {
+        "type": "multiple-choice",
+        "question": "What is deep learning?",
+        "options": [
+          "A type of machine learning using neural networks",
+          "A traditional programming method",
+          "A hardware improvement",
+          "A data collection technique"
+        ],
+        "correctAnswer": "A type of machine learning using neural networks",
+        "explanation": "Deep learning is a subset of machine learning that uses neural networks with many layers to analyze various factors of data.",
+        "difficulty": "Hard",
+        "id": "ai_q8_1755417520296",
+        "points": 1,
+        "timeLimit": 30
+      },
+      {
+        "type": "multiple-choice",
+        "question": "What is a neural network?",
+        "options": [
+          "A system of algorithms modeled after the human brain",
+          "A type of database",
+          "A programming language",
+          "A hardware component"
+        ],
+        "correctAnswer": "A system of algorithms modeled after the human brain",
+        "explanation": "Neural networks are systems of algorithms that mimic the operations of a human brain to recognize patterns and solve complex problems.",
+        "difficulty": "Medium",
+        "id": "ai_q9_1755417520297",
+        "points": 1,
+        "timeLimit": 30
+      },
+      {
+        "type": "multiple-choice",
+        "question": "What is the primary ethical concern regarding AI?",
+        "options": [
+          "Job displacement",
+          "Data privacy",
+          "Bias in decision-making",
+          "All of the above"
+        ],
+        "correctAnswer": "All of the above",
+        "explanation": "Ethical concerns surrounding AI include job displacement, data privacy issues, and potential bias in automated decision-making.",
+        "difficulty": "Hard",
+        "id": "ai_q10_1755417520299",
+        "points": 1,
+        "timeLimit": 30
+      }
+    ],
+    "createdAt": "2025-08-17T07:59:01.088Z",
+    "isActive": true,
+    "metadata": {
+      "source": "ai",
+      "generatedAt": "2025-08-17T07:58:40.290Z",
+      "numberOfQuestions": 10,
+      "assessmentName": "AI",
+      "assessmentType": "mcq",
+      "language": "english",
+      "difficulty": "Medium",
+      "easyToHard": false,
+      "requestedNumberOfQuestions": "10",
+      "isAIMode": true,
+      "isManualMode": false,
+      "skipTopicSelection": false,
+      "isAdditionalQuestions": false,
+      "selectedTopics": [
+        "History of AI",
+        "Ethics in AI"
+      ],
+      "mode": "AI",
+      "publishedAt": "2025-08-17T07:59:01.088Z",
+      "status": "active",
+      "totalAttempts": 0,
+      "totalPoints": 10,
+      "totalQuestions": 10
+    }
+  }
+]

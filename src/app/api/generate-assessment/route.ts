@@ -2,8 +2,8 @@ import { NextRequest, NextResponse } from 'next/server'
 import OpenAI from 'openai'
 
 // Initialize OpenAI client
+if (!process.env.OPENAI_API_KEY) throw new Error('OPENAI_API_KEY not set');
 const openai = new OpenAI({
-  if (!process.env.OPENAI_API_KEY) throw new Error('OPENAI_API_KEY not set');
   apiKey: process.env.OPENAI_API_KEY
 })
 

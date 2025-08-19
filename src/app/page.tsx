@@ -2956,7 +2956,7 @@ export default function Page() {
                 <div className="mt-3 p-3 bg-white rounded-lg border border-blue-100">
                   <div className="flex items-center justify-between">
                     <p className="text-sm text-blue-800">
-                      ✨ <strong>AI Analysis Complete:</strong> We've intelligently analyzed your document and extracted {extractedTopics.length} relevant topics for {manualFormData.subject}. 
+                      ✨ <strong>AI Analysis Complete:</strong> We&apos;ve intelligently analyzed your document and extracted {extractedTopics.length} relevant topics for {manualFormData.subject}. 
                       Select the topics you want to include in your {manualFormData.assessmentType.toLowerCase()}.
                     </p>
                     <button
@@ -3175,7 +3175,7 @@ export default function Page() {
                     <span className="text-purple-600 mt-1">💭</span>
                     <div>
                       <p className="text-sm font-medium text-purple-900">Your Assessment Description:</p>
-                      <p className="text-sm text-purple-700 italic">"{assessmentPrompt}"</p>
+                      <p className="text-sm text-purple-700 italic">&quot;{assessmentPrompt}&quot;</p>
                     </div>
                   </div>
                 </div>
@@ -3201,7 +3201,7 @@ export default function Page() {
                 <div className="mt-3 p-3 bg-white rounded-lg border border-purple-100">
                   <div className="flex items-center justify-between">
                     <p className="text-sm text-purple-800">
-                      ✨ <strong>AI Analysis Complete:</strong> We've used NLP techniques to analyze your description and identified "{detectedMainTopic || formData.assessmentName}" as the main topic. 
+                      ✨ <strong>AI Analysis Complete:</strong> We&apos;ve used NLP techniques to analyze your description and identified &quot;{detectedMainTopic || formData.assessmentName}&quot; as the main topic. 
                       Generated {aiExtractedTopics.length} relevant subtopics within this subject area. 
                       Select the specific areas you want to test in your {formData.assessmentType.toLowerCase()}.
                     </p>

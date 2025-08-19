@@ -623,7 +623,7 @@ export default function StudentAssessmentPage() {
               ) : (
                 <div className="text-center py-8 text-gray-500">
                   <div className="text-4xl mb-2">🎯</div>
-                  <p className="text-sm sm:text-base">You're the first to complete this assessment!</p>
+                  <p className="text-sm sm:text-base">You&apos;re the first to complete this assessment!</p>
                   <p className="text-xs sm:text-sm">Results will update as more students finish.</p>
                 </div>
               )}
@@ -895,7 +895,7 @@ export default function StudentAssessmentPage() {
               <div className="text-center py-6 sm:py-8">
                 <div className="text-3xl sm:text-4xl mb-2">🎯</div>
                 <p className="text-sm sm:text-base text-gray-600 font-medium">Great job! Perfect scores across all topics!</p>
-                <p className="text-xs sm:text-sm text-gray-500">You've mastered all the areas covered in this assessment.</p>
+                <p className="text-xs sm:text-sm text-gray-500">You&apos;ve mastered all the areas covered in this assessment.</p>
               </div>
             }
           </div>
@@ -1012,7 +1012,7 @@ export default function StudentAssessmentPage() {
             <div className="absolute inset-0 bg-red-50 bg-opacity-95 rounded-lg flex items-center justify-center z-10 scale-in">
               <div className="text-center p-6 sm:p-8">
                 <div className="text-4xl sm:text-6xl mb-3 sm:mb-4">⏰</div>
-                <h3 className="text-lg sm:text-2xl font-bold text-red-600 mb-2">Time's Up!</h3>
+                <h3 className="text-lg sm:text-2xl font-bold text-red-600 mb-2">Time&apos;s Up!</h3>
                 <p className="text-sm sm:text-base text-red-500 mb-4">You can no longer answer this question.</p>
                 <button
                   onClick={() => {

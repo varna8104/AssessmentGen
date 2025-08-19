@@ -1,46 +1,65 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { publishedAssessments } from '@/lib/storage'
-import { writeFileSync, readFileSync, existsSync } from 'fs'
+import { writeFileSync, readFileSync, existsSync, mkdirSync } from 'fs'
 import { join } from 'path'
+import { tmpdir } from 'os'
+// In Vercel serverless, the filesystem is read-only except for /tmp. Use a Vercel-safe base dir.
+function getDataBaseDir() {
+  const isVercel = !!process.env.VERCEL
+  return isVercel ? tmpdir() : join(process.cwd(), 'data')
+}
 
-const ASSESSMENTS_FILE = join(process.cwd(), 'data', 'assessments.json');
+function getAssessmentsFilePath() {
+  return join(getDataBaseDir(), 'assessments.json')
+}
 
 function ensureDataDirectory() {
-  const dataDir = join(process.cwd(), 'data');
-  if (!existsSync(dataDir)) {
-    require('fs').mkdirSync(dataDir, { recursive: true });
+  const dataDir = getDataBaseDir()
+  try {
+    if (!existsSync(dataDir)) {
+      mkdirSync(dataDir, { recursive: true })
+    }
+  } catch (e) {
+    // If we cannot create the directory (e.g., truly read-only env), we'll operate in-memory only.
+    console.warn('Unable to ensure data directory; continuing without file persistence.', e)
   }
 }
 
 function saveAssessmentToPersistence(assessmentRecord: any) {
-  ensureDataDirectory();
-  
-  let assessments = [];
-  if (existsSync(ASSESSMENTS_FILE)) {
-    try {
-      const data = readFileSync(ASSESSMENTS_FILE, 'utf8');
-      assessments = JSON.parse(data);
-    } catch {
-      assessments = [];
+  // Best-effort persistence only; failures should not break the API on Vercel
+  try {
+    ensureDataDirectory()
+    const filePath = getAssessmentsFilePath()
+
+    let assessments: any[] = []
+    if (existsSync(filePath)) {
+      try {
+        const data = readFileSync(filePath, 'utf8')
+        assessments = JSON.parse(data)
+      } catch {
+        assessments = []
+      }
     }
+
+    // Add new assessment
+    assessments.push({
+      code: assessmentRecord.code,
+      title: assessmentRecord.assessment.title,
+      description: assessmentRecord.assessment.description || '',
+      questions: assessmentRecord.assessment.questions,
+      createdAt: assessmentRecord.metadata.publishedAt,
+      isActive: true,
+      metadata: {
+        ...assessmentRecord.metadata,
+        totalPoints: assessmentRecord.assessment.totalPoints,
+        totalQuestions: assessmentRecord.assessment.questions.length
+      }
+    })
+
+    writeFileSync(filePath, JSON.stringify(assessments, null, 2))
+  } catch (err) {
+    console.warn('Skipping file persistence; operating in-memory only.', err)
   }
-  
-  // Add new assessment
-  assessments.push({
-    code: assessmentRecord.code,
-    title: assessmentRecord.assessment.title,
-    description: assessmentRecord.assessment.description || '',
-    questions: assessmentRecord.assessment.questions,
-    createdAt: assessmentRecord.metadata.publishedAt,
-    isActive: true,
-    metadata: {
-      ...assessmentRecord.metadata,
-      totalPoints: assessmentRecord.assessment.totalPoints,
-      totalQuestions: assessmentRecord.assessment.questions.length
-    }
-  });
-  
-  writeFileSync(ASSESSMENTS_FILE, JSON.stringify(assessments, null, 2));
 }
 
 export async function POST(request: NextRequest) {
@@ -84,8 +103,8 @@ export async function POST(request: NextRequest) {
     // Store in memory (in production, save to database)
     publishedAssessments.set(code.toUpperCase(), assessmentRecord)
     
-    // Also save to persistent JSON file
-    saveAssessmentToPersistence(assessmentRecord)
+  // Also try to save to persistent JSON file (best effort)
+  saveAssessmentToPersistence(assessmentRecord)
 
     console.log(`Assessment published with code: ${code.toUpperCase()}`)
     console.log(`Total published assessments: ${publishedAssessments.size}`)

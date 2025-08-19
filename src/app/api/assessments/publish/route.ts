@@ -3,6 +3,8 @@ import { publishedAssessments } from '@/lib/storage'
 import { writeFileSync, readFileSync, existsSync, mkdirSync } from 'fs'
 import { join } from 'path'
 import { tmpdir } from 'os'
+export const runtime = 'nodejs'
+export const dynamic = 'force-dynamic'
 // In Vercel serverless, the filesystem is read-only except for /tmp. Use a Vercel-safe base dir.
 function getDataBaseDir() {
   const isVercel = !!process.env.VERCEL
@@ -100,9 +102,9 @@ export async function POST(request: NextRequest) {
       students: [] // Track student attempts
     }
 
-    // Store in memory (in production, save to database)
-    publishedAssessments.set(code.toUpperCase(), assessmentRecord)
-    
+  // Store in memory (in production, save to database)
+  publishedAssessments.set(code.toUpperCase(), assessmentRecord)
+
   // Also try to save to persistent JSON file (best effort)
   saveAssessmentToPersistence(assessmentRecord)
 

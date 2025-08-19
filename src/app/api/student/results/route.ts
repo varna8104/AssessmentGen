@@ -1,6 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { publishedAssessments } from '@/lib/storage'
 
+// This route uses request.url and in-memory state; ensure it's always dynamic and runs on Node.js
+export const runtime = 'nodejs'
+export const dynamic = 'force-dynamic'
+export const revalidate = 0
+
 export async function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url)

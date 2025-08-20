@@ -1484,5 +1484,101 @@
       "totalPoints": 10,
       "totalQuestions": 10
     }
+  },
+  {
+    "code": "MQ4S7W",
+    "title": "AI",
+    "description": "Assessment description",
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "question": "What does AI stand for?",
+        "options": [
+          "Artificial Intelligence",
+          "Advanced Integration",
+          "Automated Information",
+          "Analog Interface"
+        ],
+        "correctAnswer": "Artificial Intelligence",
+        "explanation": "AI stands for Artificial Intelligence, which refers to the simulation of human intelligence in machines.",
+        "difficulty": "Easy",
+        "id": "ai_q1_1755672526832",
+        "points": 1,
+        "timeLimit": 30
+      },
+      {
+        "type": "multiple-choice",
+        "question": "Which of the following is a common application of AI?",
+        "options": [
+          "Data Analysis",
+          "Web Hosting",
+          "Graphic Design",
+          "Basic Text Editing"
+        ],
+        "correctAnswer": "Data Analysis",
+        "explanation": "AI is widely used in data analysis to identify patterns and make predictions based on large datasets.",
+        "difficulty": "Medium",
+        "id": "ai_q2_1755672526833",
+        "points": 1,
+        "timeLimit": 30
+      },
+      {
+        "type": "multiple-choice",
+        "question": "What is the primary focus of machine learning within AI?",
+        "options": [
+          "Creating visual art",
+          "Developing software",
+          "Learning from data",
+          "Building hardware"
+        ],
+        "correctAnswer": "Learning from data",
+        "explanation": "Machine learning is a subset of AI that focuses on algorithms that allow computers to learn from and make predictions based on data.",
+        "difficulty": "Medium",
+        "id": "ai_q3_1755672526834",
+        "points": 1,
+        "timeLimit": 30
+      },
+      {
+        "type": "multiple-choice",
+        "question": "Which of the following is a potential ethical concern regarding AI?",
+        "options": [
+          "Increased automation",
+          "Job displacement",
+          "Bias in algorithms",
+          "All of the above"
+        ],
+        "correctAnswer": "All of the above",
+        "explanation": "All listed options represent potential ethical concerns related to AI, including automation, job loss, and algorithmic bias.",
+        "difficulty": "Hard",
+        "id": "ai_q4_1755672526835",
+        "points": 1,
+        "timeLimit": 30
+      }
+    ],
+    "createdAt": "2025-08-20T06:48:49.860Z",
+    "isActive": true,
+    "metadata": {
+      "source": "ai",
+      "generatedAt": "2025-08-20T06:48:46.833Z",
+      "numberOfQuestions": 4,
+      "assessmentName": "AI",
+      "assessmentType": "mcq",
+      "language": "english",
+      "difficulty": "Easy",
+      "easyToHard": false,
+      "requestedNumberOfQuestions": "4",
+      "isAIMode": true,
+      "isManualMode": false,
+      "skipTopicSelection": true,
+      "isAdditionalQuestions": false,
+      "assessmentPrompt": "basics of AI",
+      "mode": "AI",
+      "skippedTopicSelection": true,
+      "publishedAt": "2025-08-20T06:48:49.860Z",
+      "status": "active",
+      "totalAttempts": 0,
+      "totalPoints": 4,
+      "totalQuestions": 4
+    }
   }
 ]

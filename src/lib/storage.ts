@@ -53,4 +53,3 @@ export interface AssessmentRecord {
     completedAt: string | null
   }>
 }
-

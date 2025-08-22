@@ -80,24 +80,27 @@ export async function POST(request: NextRequest) {
     let sessionId = null;
     if (studentName && !existingStudentSession) {
       sessionId = `session_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
-      const { error: insertError } = await supabase
+      const insertObj = {
+        assessment_code: assessmentCode.toUpperCase(),
+        student_name: studentName.trim(),
+        created_at: new Date().toISOString(),
+        completed: false,
+        score: null,
+        responses: [],
+      };
+      const { data: insertData, error: insertError } = await supabase
         .from('student_sessions')
-        .insert([
-          {
-            assessment_code: assessmentCode.toUpperCase(),
-            student_name: studentName.trim(),
-            started_at: new Date().toISOString(),
-            completed: false,
-            score: null,
-            responses: [],
-          }
-        ]);
+        .insert([insertObj])
+        .select();
       if (insertError) {
-        console.error('Supabase insert error:', insertError);
+        console.error('Supabase insert error:', insertError, 'Insert object:', insertObj);
         return NextResponse.json(
           { success: false, message: 'Failed to create student session', details: insertError.message },
           { status: 500 }
         );
+      }
+      if (insertData && insertData.length > 0) {
+        sessionId = insertData[0].id;
       }
     } else if (existingStudentSession) {
       sessionId = existingStudentSession.id;

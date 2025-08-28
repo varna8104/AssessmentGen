@@ -326,38 +326,19 @@ export async function PUT(request: NextRequest) {
     const { action, assessmentCode } = await request.json()
 
     const endOne = async (code: string) => {
-      const nowIso = new Date().toISOString()
-
-      // Fetch the existing row to merge JSON
-      const { data: rows, error: fetchErr } = await supabase
-        .from('assessments')
-        .select('*')
-        .eq('code', code)
-        .limit(1)
-
-      if (fetchErr) throw fetchErr
-      const row = rows?.[0]
-      if (!row) return
-
-      const dataJson = row.data || {}
-      const metadata = { ...(dataJson.metadata || {}), status: 'ended', endedAt: nowIso, endedBy: 'teacher' }
-      const newData = { ...dataJson, metadata }
-
-      const { error: updErr } = await supabase
-        .from('assessments')
-        .update({ data: newData })
-        .eq('code', code)
-
-      if (updErr) throw updErr
-
-      // Mark all in-progress sessions as completed (only update 'completed' column)
-      const { error: sessErr } = await supabase
+      // Delete all student_sessions for this assessment
+      const { error: delSessErr } = await supabase
         .from('student_sessions')
-        .update({ completed: true })
+        .delete()
         .eq('assessment_code', code)
-        .eq('completed', false)
+      if (delSessErr) throw delSessErr
 
-      if (sessErr) throw sessErr
+      // Delete the assessment itself
+      const { error: delAssessErr } = await supabase
+        .from('assessments')
+        .delete()
+        .eq('code', code)
+      if (delAssessErr) throw delAssessErr
     }
 
     if (action === 'endAssessment' && assessmentCode) {

@@ -350,10 +350,10 @@ export async function PUT(request: NextRequest) {
 
       if (updErr) throw updErr
 
-      // Mark all in-progress sessions as completed
+      // Mark all in-progress sessions as completed (only update 'completed' column)
       const { error: sessErr } = await supabase
         .from('student_sessions')
-        .update({ completed: true, completed_at: nowIso })
+        .update({ completed: true })
         .eq('assessment_code', code)
         .eq('completed', false)
 
@@ -387,7 +387,9 @@ export async function PUT(request: NextRequest) {
 
     return NextResponse.json({ success: false, error: 'Invalid action' }, { status: 400 })
   } catch (error: any) {
+    let errMsg = error?.message || String(error)
+    if (error?.code) errMsg += ` (code: ${error.code})`
     console.error('Error updating assessments:', error)
-    return NextResponse.json({ success: false, error: error.message }, { status: 500 })
+    return NextResponse.json({ success: false, error: errMsg }, { status: 500 })
   }
 }

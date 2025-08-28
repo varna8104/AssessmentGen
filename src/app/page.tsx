@@ -287,11 +287,12 @@ export default function Page() {
   }
   
   // End all assessments
+  const [isEndingAll, setIsEndingAll] = useState(false);
   const handleEndAllAssessments = async () => {
     if (!confirm('Are you sure you want to end ALL active assessments? This action cannot be undone.')) {
-      return
+      return;
     }
-    
+    setIsEndingAll(true);
     try {
       const response = await fetch('/api/assessments/monitor', {
         method: 'PUT',
@@ -299,20 +300,21 @@ export default function Page() {
         body: JSON.stringify({
           action: 'endAllAssessments'
         })
-      })
-      
-      const data = await response.json()
+      });
+      const data = await response.json();
       if (data.success) {
-        alert('All assessments ended successfully!')
-        fetchViewModeData() // Refresh data
+        alert('All assessments ended successfully!');
+        await fetchViewModeData(); // Ensure refresh completes
       } else {
-        alert('Failed to end assessments: ' + data.error)
+        alert('Failed to end assessments: ' + data.error);
       }
     } catch (error) {
-      console.error('Error ending all assessments:', error)
-      alert('Failed to end assessments')
+      console.error('Error ending all assessments:', error);
+      alert('Failed to end assessments');
+    } finally {
+      setIsEndingAll(false);
     }
-  }
+  };
 
   // Clean up auto-refresh when component unmounts or leaves View Mode
   useEffect(() => {
@@ -2134,11 +2136,16 @@ export default function Page() {
                     >
                       🔄 Refresh
                     </button>
-                    <button 
+                    <button
                       onClick={handleEndAllAssessments}
-                      className="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-all text-sm"
+                      className={`px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-all text-sm ${isEndingAll ? 'opacity-60 cursor-not-allowed' : ''}`}
+                      disabled={isEndingAll}
                     >
-                      🛑 End All
+                      {isEndingAll ? (
+                        <span className="flex items-center gap-2"><span className="animate-spin w-4 h-4 border-2 border-white border-t-transparent rounded-full"></span> Ending...</span>
+                      ) : (
+                        '🛑 End All'
+                      )}
                     </button>
                   </div>
                 </div>

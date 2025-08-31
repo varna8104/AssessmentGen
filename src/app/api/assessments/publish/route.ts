@@ -1,3 +1,21 @@
+// UPDATE an assessment (PUT)
+export async function PUT(request: NextRequest) {
+  try {
+    const { code, updates } = await request.json();
+    if (!code || !updates) {
+      return NextResponse.json({ error: 'Missing code or updates' }, { status: 400 });
+    }
+    const { data, error } = await supabase
+      .from('assessments')
+      .update({ data: updates })
+      .eq('code', code.toUpperCase())
+      .select();
+    if (error) throw error;
+    return NextResponse.json({ success: true, data });
+  } catch (error: any) {
+    return NextResponse.json({ error: error.message }, { status: 500 });
+  }
+}
 import { NextRequest, NextResponse } from 'next/server'
 import { supabase } from '@/lib/supabase'
 

@@ -322,55 +322,5 @@ export async function GET() {
 
 // PUT endpoint to end an assessment
 export async function PUT(request: NextRequest) {
-  try {
-    const { action, assessmentCode } = await request.json()
-
-    const endOne = async (code: string) => {
-      // Delete all student_sessions for this assessment
-      const { error: delSessErr } = await supabase
-        .from('student_sessions')
-        .delete()
-        .eq('assessment_code', code)
-      if (delSessErr) throw delSessErr
-
-      // Delete the assessment itself
-      const { error: delAssessErr } = await supabase
-        .from('assessments')
-        .delete()
-        .eq('code', code)
-      if (delAssessErr) throw delAssessErr
-    }
-
-    if (action === 'endAssessment' && assessmentCode) {
-      await endOne(assessmentCode.toUpperCase())
-      return NextResponse.json({ success: true, message: 'Assessment ended successfully' })
-    }
-
-    if (action === 'endAllAssessments') {
-      // Find all active assessments and end them
-      let codes: string[] = []
-      const { data: viewData } = await supabase.from('active_assessments').select('code')
-      if (viewData?.length) {
-        codes = viewData.map((r: any) => r.code)
-      } else {
-        const { data: allData } = await supabase.from('assessments').select('*')
-        codes = (allData || [])
-          .filter((row: any) => row?.data?.metadata?.status === 'active')
-          .map((r: any) => r.code)
-      }
-
-      for (const code of codes) {
-        await endOne(code)
-      }
-
-      return NextResponse.json({ success: true, message: 'All assessments ended successfully' })
-    }
-
-    return NextResponse.json({ success: false, error: 'Invalid action' }, { status: 400 })
-  } catch (error: any) {
-    let errMsg = error?.message || String(error)
-    if (error?.code) errMsg += ` (code: ${error.code})`
-    console.error('Error updating assessments:', error)
-    return NextResponse.json({ success: false, error: errMsg }, { status: 500 })
-  }
+  return NextResponse.json({ success: true, message: 'PUT works' });
 }

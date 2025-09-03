@@ -69,7 +69,7 @@ export default function AssessmentCRUD() {
     if (!window.confirm('Delete this assessment?')) return;
     setLoading(true);
     await fetch('/api/assessments/monitor', {
-      method: 'PUT',
+      method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ action: 'endAssessment', assessmentCode: code })
     });

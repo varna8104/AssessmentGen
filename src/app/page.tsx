@@ -265,7 +265,7 @@ export default function Page() {
   const handleEndAssessment = async (assessmentCode: string) => {
     try {
       const response = await fetch('/api/assessments/monitor', {
-        method: 'PUT',
+  method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           action: 'endAssessment',
@@ -295,7 +295,7 @@ export default function Page() {
     setIsEndingAll(true);
     try {
       const response = await fetch('/api/assessments/monitor', {
-        method: 'PUT',
+  method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           action: 'endAllAssessments'

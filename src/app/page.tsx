@@ -3583,18 +3583,20 @@ export default function Page() {
                     }}
                   ></div>
                 </div>
-                <div className="flex items-center justify-center gap-8 rounded-xl border-2 border-gray-200 shadow-sm bg-white hover:border-[#ee0b8c] hover:shadow-lg p-6 card-transition">
+                <div className="flex items-center justify-center gap-8 rounded-xl border-2 border-gray-200 shadow-sm bg-white p-6 opacity-80">
                   <div className="flex flex-[2_2_0px] flex-col gap-6 max-w-lg">
                     <div className="flex flex-col gap-2">
                       <p className="text-[#181115] text-2xl font-bold leading-tight">Manual Mode</p>
                       <p className="text-[#896178] text-lg font-normal leading-relaxed">
                         Upload your textbook PDF and let AI analyze it to extract key topics. Select topics you want to assess and generate targeted questions.
+                        <span className="ml-2 inline-block align-middle text-[#ee0b8c] font-semibold">(Coming Soon)</span>
                       </p>
                     </div>
-                    <button 
-                      onClick={handleManualModeSelect}
-                      className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 flex-row-reverse bg-[#ee0b8c] text-white text-lg font-medium leading-normal w-fit hover:bg-[#d8096d] btn-transition">
-                      <span className="truncate">Select</span>
+                    <button
+                      aria-disabled
+                      title="Coming soon"
+                      className="flex min-w-[84px] max-w-[480px] items-center justify-center overflow-hidden rounded-full h-12 px-8 flex-row-reverse bg-gray-300 text-gray-600 text-lg font-medium leading-normal w-fit cursor-not-allowed">
+                      <span className="truncate">Coming Soon</span>
                     </button>
                   </div>
                   <div

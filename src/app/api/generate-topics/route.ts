@@ -130,6 +130,11 @@ export async function POST(request: NextRequest) {
     const testCompletion = await openai.chat.completions.create({
       messages: [{ role: 'user', content: 'Test' }],
       model: 'gpt-4o-mini',
+      temperature: 0,
+      top_p: 1,
+      presence_penalty: 0,
+      frequency_penalty: 0,
+      seed: parseInt(process.env.LLM_SEED || '42'),
       max_tokens: 10
     })
     
@@ -161,7 +166,7 @@ export async function POST(request: NextRequest) {
   // If API is available, proceed with AI generation
   try {
     // Use OpenAI to generate relevant topics based on subject and context
-    const chatCompletion = await openai.chat.completions.create({
+  const chatCompletion = await openai.chat.completions.create({
       messages: [
         {
           role: 'system',
@@ -224,9 +229,15 @@ ${contextInfo}
 Return JSON with topics array for the subject.`
         }
       ],
-      model: 'gpt-4o-mini',
-      temperature: 0.4,
-      max_tokens: 1000
+  model: 'gpt-4o-mini',
+  temperature: 0,
+  top_p: 1,
+  presence_penalty: 0,
+  frequency_penalty: 0,
+  seed: parseInt(process.env.LLM_SEED || '42'),
+  max_tokens: 1000,
+  // @ts-ignore - response_format supported for JSON-mode on suitable models
+  response_format: { type: 'json_object' }
     })
 
     const response = chatCompletion.choices[0]?.message?.content

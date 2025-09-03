@@ -128,7 +128,7 @@ export async function POST(request: NextRequest) {
     const extractedText = await extractTextFromPDF(pdfFile)
 
     // Use OpenAI to analyze the extracted text and generate relevant topics
-    const chatCompletion = await openai.chat.completions.create({
+  const chatCompletion = await openai.chat.completions.create({
       messages: [
         {
           role: 'system',
@@ -161,9 +161,15 @@ ${extractedText}
 Extract specific, testable topics that are appropriate for ${assessmentType} in ${subject}. Focus on concepts that can be effectively assessed through questions.`
         }
       ],
-      model: 'gpt-4o-mini',
-      temperature: 0.3,
-      max_tokens: 1000
+  model: 'gpt-4o-mini',
+  temperature: 0,
+  top_p: 1,
+  presence_penalty: 0,
+  frequency_penalty: 0,
+  seed: parseInt(process.env.LLM_SEED || '42'),
+  max_tokens: 1000,
+  // @ts-ignore - response_format supported for JSON-mode on suitable models
+  response_format: { type: 'json_object' }
     })
 
     const response = chatCompletion.choices[0]?.message?.content

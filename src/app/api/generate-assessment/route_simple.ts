@@ -236,8 +236,14 @@ Return ONLY valid JSON in this format:
           { role: "user", content: prompt }
         ],
         model: "gpt-4o-mini",
-        temperature: 0.7,
-        max_tokens: 8000
+        temperature: 0,
+        top_p: 1,
+        presence_penalty: 0,
+        frequency_penalty: 0,
+        seed: parseInt(process.env.LLM_SEED || '42'),
+        max_tokens: 8000,
+        // @ts-ignore - enforce JSON output when supported
+        response_format: { type: 'json_object' }
       })
 
       const responseContent = completion.choices[0]?.message?.content
